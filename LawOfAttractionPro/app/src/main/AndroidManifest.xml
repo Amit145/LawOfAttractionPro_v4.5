@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.apps.amit.lawofattractionpro">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true" />
+
+    <application
+        android:allowBackup="true"
+        android:allowTaskReparenting="false"
+        android:excludeFromRecents="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:launchMode="singleTask"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:taskAffinity=""
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.apps.amit.lawofattractionpro.MusicList"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.apps.amit.lawofattractionpro.PrivateWishes"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.apps.amit.lawofattractionpro.MainActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.apps.amit.lawofattractionpro.Home"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.apps.amit.lawofattractionpro.Exercise1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.apps.amit.lawofattractionpro.Exercise2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.apps.amit.lawofattractionpro.Exercise3"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.apps.amit.lawofattractionpro.Exercise4"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.apps.amit.lawofattractionpro.Exercise5"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.apps.amit.lawofattractionpro.Finish"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.apps.amit.lawofattractionpro.Settings"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.apps.amit.lawofattractionpro.calendar"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.apps.amit.lawofattractionpro.timepicker"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.apps.amit.lawofattractionpro.Story"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.apps.amit.lawofattractionpro.AboutApp"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.apps.amit.lawofattractionpro.AllQuotes"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.apps.amit.lawofattractionpro.experiences"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.apps.amit.lawofattractionpro.expStory"
+            android:screenOrientation="portrait" />
+
+        <receiver android:name="com.apps.amit.lawofattractionpro.AlarmReceiver" />
+        <receiver android:name="com.apps.amit.lawofattractionpro.Notify" />
+        <receiver android:name="com.apps.amit.lawofattractionpro.CommentsReminder" />
+
+        <activity
+            android:name="com.apps.amit.lawofattractionpro.SetTime"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustNothing" />
+        <activity
+            android:name="com.apps.amit.lawofattractionpro.info"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.apps.amit.lawofattractionpro.SetLanguage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.apps.amit.lawofattractionpro.exer"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.apps.amit.lawofattractionpro.Manual"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.apps.amit.lawofattractionpro.comments"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.apps.amit.lawofattractionpro.feedback"
+            android:label="@string/title_activity_feedback"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.apps.amit.lawofattractionpro.Quotes"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="DAILY_QUOTE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.apps.amit.lawofattractionpro.Lawtips"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" /> <!-- Sample AdMob App ID: ca-app-pub-3940256099942544~3347511713 -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-2259921691483610~8730116859" />
+
+        <service android:name="com.apps.amit.lawofattractionpro.FirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name="com.apps.amit.lawofattractionpro.FirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <!--
+    Set custom default icon. This is used when no icon is set for incoming notification messages.
+    See README(https://goo.gl/l4GJaQ) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/status" />
+        <!--
+             Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorPrimary" />
+
+        <activity
+            android:name="com.apps.amit.lawofattractionpro.Policy"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.apps.amit.lawofattractionpro.Task"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.apps.amit.lawofattractionpro.SubTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.apps.amit.lawofattractionpro.storyList"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="STORY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.apps.amit.lawofattractionpro.service.MusicService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.media.browse.MediaBrowserService"/>
+            </intent-filter>
+        </service>
+
+        <!--
+             MediaSession, prior to API 21, uses a broadcast receiver to communicate with a
+             media session. It does not have to be this broadcast receiver, but it must
+             handle the action "android.intent.action.MEDIA_BUTTON".
+
+             Additionally, this is used to resume the service from an inactive state upon
+             receiving a media button event (such as "play").
+        -->
+        <receiver android:name="android.support.v4.media.session.MediaButtonReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_BUTTON"/>
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

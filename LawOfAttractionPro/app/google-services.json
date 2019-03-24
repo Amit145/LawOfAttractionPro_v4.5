@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "100866468581",
+    "firebase_url": "https://pro-lawofattraction.firebaseio.com",
+    "project_id": "pro-lawofattraction",
+    "storage_bucket": "pro-lawofattraction.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:100866468581:android:8aa8af33cb1fc874",
+        "android_client_info": {
+          "package_name": "com.apps.amit.lawofattractionpro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "100866468581-kec65c6joa9s2d2d4b0dq7odv3cmi6bv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.apps.amit.lawofattractionpro",
+            "certificate_hash": "9e12038641cd85ab111ca25490199143d54c0eb3"
+          }
+        },
+        {
+          "client_id": "100866468581-b4sdkcu36jheaqqnr8l5cgfcmpa6kkoi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.apps.amit.lawofattractionpro",
+            "certificate_hash": "1bbdcceb46d0066c76cfa3911b8a416299d744f6"
+          }
+        },
+        {
+          "client_id": "100866468581-58sao6d16io9rl6otetsqf42ama6eh3o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdnwsfluJkAK3h-_suNgXaDzgqTT_iTgM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "100866468581-58sao6d16io9rl6otetsqf42ama6eh3o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
