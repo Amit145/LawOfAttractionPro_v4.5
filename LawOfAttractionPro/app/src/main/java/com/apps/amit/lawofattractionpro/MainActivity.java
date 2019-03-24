@@ -231,7 +231,7 @@ public class MainActivity extends AppCompatActivity {
 
                 } catch (IOException e) {
 
-                    Toast.makeText(getApplicationContext(), getString(R.string.myStory_warn), Toast.LENGTH_LONG).show();
+                   // Toast.makeText(getApplicationContext(), getString(R.string.myStory_warn), Toast.LENGTH_LONG).show();
 
                 }
                 return "Data Submit Successfully";
@@ -271,7 +271,7 @@ public class MainActivity extends AppCompatActivity {
 
                 } catch (IOException e) {
 
-                    Toast.makeText(getApplicationContext(), getString(R.string.myStory_warn), Toast.LENGTH_LONG).show();
+                    //Toast.makeText(getApplicationContext(), getString(R.string.myStory_warn), Toast.LENGTH_LONG).show();
 
                 }
                 return "Data Submit Successfully";

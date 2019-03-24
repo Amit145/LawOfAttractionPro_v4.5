@@ -64,6 +64,7 @@ public class comments extends AppCompatActivity {
     private AlphaAnimation buttonClick = new AlphaAnimation(1F, 0.8F);
     Resources resources;
     EditText edt, edt1;
+    AlertDialog alert;
     SwipeRefreshLayout mSwipeRefreshLayout;
     String UserName, UserComment, timee;
     RequestQueue requestQueue;
@@ -146,7 +147,7 @@ public class comments extends AppCompatActivity {
             @Override
             public void onRefresh() {
                 mSwipeRefreshLayout.setRefreshing(true);
-                Toast.makeText(getApplicationContext(),getString(R.string.loading_msg), Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(),resources.getString(R.string.loading_msg), Toast.LENGTH_SHORT).show();
                 ( new Handler()).postDelayed(new Runnable() {
                     @Override
                     public void run() {
@@ -206,7 +207,7 @@ public class comments extends AppCompatActivity {
             txt1.setVisibility(View.INVISIBLE);
             recyclerView.setVisibility(View.INVISIBLE);
 
-            Toast.makeText(getApplicationContext(), getString(R.string.noInternet_txt), Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(), resources.getString(R.string.noInternet_txt), Toast.LENGTH_LONG).show();
         }
 
 
@@ -219,10 +220,10 @@ public class comments extends AppCompatActivity {
                 AlertDialog.Builder builder = new AlertDialog.Builder(comments.this);
                 final View dialogView = View.inflate(getApplicationContext(),R.layout.dialog_options, null);
                 builder.setCancelable(false);
-                builder.setMessage(getString(R.string.subUniverse_dialogTitle));
+                builder.setMessage(resources.getString(R.string.subUniverse_dialogTitle));
 
                 builder.setView(dialogView);
-                final AlertDialog alert = builder.create();
+                alert = builder.create();
                 alert.show();
 
                 nameText =  dialogView.findViewById(R.id.name);
@@ -233,10 +234,10 @@ public class comments extends AppCompatActivity {
                 Button cancel =  dialogView.findViewById(R.id.btncancel);
                 checkBox = dialogView.findViewById(R.id.checkBox);
 
-                nameText.setText(getString(R.string.subUniverse_dialogName));
-                wishText.setText(getString(R.string.subUniverse_dialogWish));
-                submit.setText(getString(R.string.subUniverse_dialogSubmit));
-                cancel.setText(getString(R.string.subUniverse_dialogCancel));
+                nameText.setText(resources.getString(R.string.subUniverse_dialogName));
+                wishText.setText(resources.getString(R.string.subUniverse_dialogWish));
+                submit.setText(resources.getString(R.string.subUniverse_dialogSubmit));
+                cancel.setText(resources.getString(R.string.subUniverse_dialogCancel));
 
                 SharedPreferences sp1 = getSharedPreferences("timerEnable", experiences.MODE_PRIVATE);
                 String naam = sp1.getString("userName","");
@@ -296,9 +297,9 @@ public class comments extends AppCompatActivity {
         Context context = LocaleHelper.setLocale(this, languageCode);
         resources = context.getResources();
 
-        story.setText(getString(R.string.subUniverse_buttonText));
-        txt.setText(getString(R.string.refresh_text));
-        txt1.setText(getString(R.string.subUniverse_getPro));
+        story.setText(resources.getString(R.string.subUniverse_buttonText));
+        txt.setText(resources.getString(R.string.refresh_text));
+        txt1.setText(resources.getString(R.string.subUniverse_getPro));
 
     }
 
@@ -330,13 +331,13 @@ public class comments extends AppCompatActivity {
         if (TextUtils.isEmpty(UserName)  )
         {
 
-            edt.setError(getString(R.string.enterName));
+            edt.setError(resources.getString(R.string.enterName));
 
         }
         else if ( TextUtils.isEmpty(UserComment) )
         {
 
-            edt1.setError(getString(R.string.enterWish));
+            edt1.setError(resources.getString(R.string.enterWish));
 
         } else {
 
@@ -392,7 +393,7 @@ public class comments extends AppCompatActivity {
 
                 } catch (Exception e) {
 
-                    Toast.makeText(getApplicationContext(), getString(R.string.nameError4), Toast.LENGTH_LONG).show();
+                   // Toast.makeText(getApplicationContext(), getString(R.string.nameError4), Toast.LENGTH_LONG).show();
 
                 }
                 return "Data Submit Successfully";
@@ -408,6 +409,7 @@ public class comments extends AppCompatActivity {
         }
         SendPostReqAsyncTask sendPostReqAsyncTask = new SendPostReqAsyncTask();
         sendPostReqAsyncTask.execute(name, email, website);
+        alert.dismiss();
     }
 
 
@@ -481,19 +483,19 @@ public class comments extends AppCompatActivity {
             if (TextUtils.isEmpty(checkName)  )
             {
 
-                edt.setError(getString(R.string.enterName));
+                edt.setError(resources.getString(R.string.enterName));
 
             }
             else if ( TextUtils.isEmpty(checkDesc) )
             {
 
-                edt1.setError(getString(R.string.enterWish));
+                edt1.setError(resources.getString(R.string.enterWish));
 
             }
 
             else if (edt.getText().length()>=25 )
             {
-                edt.setError(getString(R.string.nameError));
+                edt.setError(resources.getString(R.string.nameError));
 
             }
 

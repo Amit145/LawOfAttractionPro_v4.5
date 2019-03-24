@@ -83,16 +83,16 @@ public class feedback extends AppCompatActivity {
         Context context = LocaleHelper.setLocale(getApplicationContext(), value1);
          resources = context.getResources();
 
-        title .setText(getString(R.string.feedback));
-        usrname.setText(getString(R.string.subUniverse_dialogName));
-        feed.setText(getString(R.string.feedback1));
-        feed1.setText(getString(R.string.feedback2));
-        feed2.setText(getString(R.string.feedback3));
-        feed3.setText(getString(R.string.feedback4));
-        feed4.setText(getString(R.string.feedback5));
+        title .setText(resources.getString(R.string.feedback));
+        usrname.setText(resources.getString(R.string.subUniverse_dialogName));
+        feed.setText(resources.getString(R.string.feedback1));
+        feed1.setText(resources.getString(R.string.feedback2));
+        feed2.setText(resources.getString(R.string.feedback3));
+        feed3.setText(resources.getString(R.string.feedback4));
+        feed4.setText(resources.getString(R.string.feedback5));
 
-        bt1.setText(getString(R.string.subUniverse_dialogCancel));
-        bt2.setText(getString(R.string.subUniverse_dialogSubmit));
+        bt1.setText(resources.getString(R.string.subUniverse_dialogCancel));
+        bt2.setText(resources.getString(R.string.subUniverse_dialogSubmit));
 
         r1.setText(getString(R.string.daily));
         r2.setText(getString(R.string.weekly));
@@ -218,7 +218,7 @@ public class feedback extends AppCompatActivity {
             //et1.setError("Please Enter Your Name");
 
            // et1.setError("Please Enter Your Wish");
-            Toast.makeText(getApplicationContext(), getString(R.string.enterName), Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(), resources.getString(R.string.enterName), Toast.LENGTH_LONG).show();
 
         }
 
@@ -231,7 +231,7 @@ public class feedback extends AppCompatActivity {
             editor.apply();
 
             SendDataToServer(et1.getText().toString(),F1,F2,F3,F4,"FREE: "+et2.getText().toString());
-            Toast.makeText(this, getString(R.string.thankYou), Toast.LENGTH_LONG).show();
+            Toast.makeText(this, resources.getString(R.string.thankYou), Toast.LENGTH_LONG).show();
             this.finish();
         }
     }
@@ -274,7 +274,7 @@ public class feedback extends AppCompatActivity {
 
                 } catch (Exception e) {
 
-                    Toast.makeText(getApplicationContext(), getString(R.string.nameError4), Toast.LENGTH_LONG).show();
+                   // Toast.makeText(getApplicationContext(), getString(R.string.nameError4), Toast.LENGTH_LONG).show();
 
                 }
                 return "Data Submit Successfully";
