@@ -11,6 +11,19 @@ import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.support.v4.app.NotificationCompat;
 import android.support.v4.app.TaskStackBuilder;
+import android.util.Log;
+import android.widget.Toast;
+
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import static com.apps.amit.lawofattractionpro.timepicker.p1;
 
@@ -20,15 +33,70 @@ import static com.apps.amit.lawofattractionpro.timepicker.p1;
 
 public class CommentsReminder extends BroadcastReceiver {
 
-
+    String quote;
+    String newQuote;
+    RequestQueue requestQueue;
 
     @Override
-    public void onReceive(Context context, Intent arg2) {
+    public void onReceive(final Context context, Intent arg2) {
         //Toast.makeText(context, "Alarm received!", Toast.LENGTH_LONG).show();
+
+        requestQueue = Volley.newRequestQueue(context);
+
+        String url= "http://www.innovativelabs.xyz/showQuotes.php";
+
+        StringRequest stringRequest = new StringRequest(Request.Method.GET,
+                url,
+                new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+
+                        try {
+
+                            JSONArray jsonarray = new JSONArray(response);
+
+                            for(int i=0; i < jsonarray.length(); i++) {
+
+                                JSONObject jsonobject = jsonarray.getJSONObject(i);
+
+                                quote = jsonobject.getString("Quote");
+
+                                newQuote = String.valueOf(quote);
+
+                                SharedPreferences timerEnable = context.getSharedPreferences("timerNotiEnable", SetTime.MODE_PRIVATE);
+                                SharedPreferences.Editor editor = timerEnable.edit();
+                                editor.putString("FCMquote", jsonobject.getString("Quote"));
+                                editor.apply();
+
+
+
+                            }
+
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+
+
+                        }
+
+                    }
+                },
+
+                new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        if(error != null){
+
+                            //Toast.makeText(getApplicationContext(), getString(R.string.nwError), Toast.LENGTH_LONG).show();
+                        }
+                    }
+                }
+
+        );
+
+        requestQueue.add(stringRequest);
 
         int NOTIFICATION_ID = 236;
         NotificationManager mngr1 = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
-
 
         if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
 
@@ -46,24 +114,26 @@ public class CommentsReminder extends BroadcastReceiver {
             mChannel.setShowBadge(false);
             mngr1.createNotificationChannel(mChannel);
 
-            SharedPreferences sp1 = context.getSharedPreferences("timerEnable", context.MODE_PRIVATE);
-            String naam = sp1.getString("userName","");
+            SharedPreferences sp1 = context.getSharedPreferences("timerNotiEnable", context.MODE_PRIVATE);
+            String naam = sp1.getString("FCMquote","");
+
+            //SharedPreferences sp1 = context.getSharedPreferences("timerEnable", context.MODE_PRIVATE);
+           // String naam = sp1.getString("userName","");
 
             NotificationCompat.Builder builder = new NotificationCompat.Builder(context, CHANNEL_ID)
                     .setDefaults(Notification.DEFAULT_ALL)
                     .setWhen(System.currentTimeMillis())
                     .setSmallIcon(R.drawable.status)
                     .setAutoCancel(true)
-                    .addAction(R.drawable.ic_play_arrow_white_24dp, "\t SAY TO THE UNIVERSE", p1)
-                    .setContentTitle("Hi "+naam+", Say Your Wish To The Universe !!")
-                    .setContentText("See What Other's Are Manifesting !!")
+                    .addAction(R.drawable.ic_play_arrow_white_24dp, "\t OPEN QUOTE", p1)
+                    .setContentTitle(naam)
+                    .setContentText(naam)
                     .setDefaults(Notification.DEFAULT_LIGHTS | Notification.DEFAULT_SOUND)
                     .setContentInfo("");
 
-
-            Intent resultIntent = new Intent(context, Home.class);
+            Intent resultIntent = new Intent(context, Quotes.class);
             TaskStackBuilder stackBuilder = TaskStackBuilder.create(context);
-            stackBuilder.addParentStack(Home.class);
+            stackBuilder.addParentStack(Quotes.class);
             stackBuilder.addNextIntent(resultIntent);
             PendingIntent resultPendingIntent = stackBuilder.getPendingIntent(0, PendingIntent.FLAG_UPDATE_CURRENT);
 
@@ -72,11 +142,9 @@ public class CommentsReminder extends BroadcastReceiver {
             mngr1.notify(NOTIFICATION_ID, builder.build());
         }
 
-
         else {
 
-
-            Intent i = new Intent(context, comments.class);
+            Intent i = new Intent(context, Quotes.class);
             PendingIntent p1 = PendingIntent.getActivity(context, 0, i, 0);
             NotificationCompat.Builder builder1 = new NotificationCompat.Builder(context);
             builder1.setAutoCancel(true)
@@ -84,9 +152,9 @@ public class CommentsReminder extends BroadcastReceiver {
                     .setWhen(System.currentTimeMillis())
                     .setSmallIcon(R.drawable.status)
                     .setAutoCancel(true)
-                    .addAction(R.drawable.ic_play_arrow_white_24dp, "\t SAY TO THE UNIVERSE", p1)
-                    .setContentTitle("Say Your Wish To The Universe !!")
-                    .setContentText("See What Other's Are Manifesting !!")
+                    .addAction(R.drawable.ic_play_arrow_white_24dp, "\t OPEN QUOTE", p1)
+                    .setContentTitle(newQuote)
+                    .setContentText(newQuote)
                     .setDefaults(Notification.DEFAULT_LIGHTS | Notification.DEFAULT_SOUND)
                     .setContentInfo("");
 

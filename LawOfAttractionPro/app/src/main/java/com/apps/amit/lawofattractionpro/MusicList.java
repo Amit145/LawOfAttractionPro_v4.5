@@ -207,7 +207,33 @@ public class MusicList extends AppCompatActivity {
 
             @Override
             public void onErrorResponse(VolleyError error) {
+
                 Toast.makeText(getApplicationContext(), resources.getString(R.string.nameError4), Toast.LENGTH_LONG).show();
+
+                mSwipeRefreshLayout1 =  findViewById(R.id.swipe_container);
+                mSwipeRefreshLayout1.setColorSchemeResources(R.color.colorPrimary,
+                        android.R.color.holo_green_dark,
+                        android.R.color.holo_orange_dark,
+                        android.R.color.holo_blue_dark);
+
+                mSwipeRefreshLayout1.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+                    @Override
+                    public void onRefresh() {
+                        mSwipeRefreshLayout1.setRefreshing(true);
+                        Toast.makeText(getApplicationContext(), resources.getString(R.string.loading_msg), Toast.LENGTH_SHORT).show();
+                        ( new Handler()).postDelayed(new Runnable() {
+                            @Override
+                            public void run() {
+                                mSwipeRefreshLayout1.setRefreshing(false);
+                                Intent i = new Intent(getApplicationContext(), MusicList.class);
+                                i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                                i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                                MusicList.this.finish();
+                                startActivity(i);
+                            }
+                        },2000);
+                    }
+                });
             }
         });
 

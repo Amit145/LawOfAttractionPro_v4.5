@@ -18,6 +18,8 @@ package com.apps.amit.lawofattractionpro;
 
 import android.content.Context;
 import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -63,6 +65,8 @@ public class MainActivity extends AppCompatActivity {
     private ImageView shareMusicImage;
     private ImageButton imgButton;
     private AlphaAnimation buttonClick = new AlphaAnimation(1F, 0.8F);
+    ConnectivityManager connMngr;
+    NetworkInfo netInfo;
 
 
     @Override
@@ -100,6 +104,22 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
+        connMngr = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+        if (connMngr != null && connMngr.getActiveNetworkInfo() != null) {
+
+            netInfo = connMngr.getActiveNetworkInfo();
+        }
+
+
+        if (netInfo == null) {
+
+            MainActivity.this.finish();
+            Toast.makeText(getApplicationContext(), getString(R.string.noInternet_txt), Toast.LENGTH_LONG).show();
+
+
+        } else {
+
         mTitleTextView = findViewById(R.id.song_title);
         mArtistTextView = findViewById(R.id.song_artist);
         mCoverPic = findViewById(R.id.imageView8);
@@ -112,8 +132,9 @@ public class MainActivity extends AppCompatActivity {
         //findViewById(R.id.button_previous).setOnClickListener(clickListener);
         imgButton = findViewById(R.id.button_play);
 
+
         imgButton.setOnClickListener(clickListener);
-       // findViewById(R.id.button_next).setOnClickListener(clickListener);
+        // findViewById(R.id.button_next).setOnClickListener(clickListener);
 
         mMediaBrowserHelper = new MediaBrowserConnection(this);
         mMediaBrowserHelper.registerCallback(new MediaBrowserListener());
@@ -123,22 +144,22 @@ public class MainActivity extends AppCompatActivity {
         if (mIsPlaying) {
 
             mMediaBrowserHelper.getTransportControls().pause();
-           // mMediaControlsImage.setImageResource(R.drawable.ic_media_with_play);
+            // mMediaControlsImage.setImageResource(R.drawable.ic_media_with_play);
             //imgButton.setImageResource(R.drawable.ic_play);
 
         }
 
 
-        if(result.getExtras()!=null) {
+        if (result.getExtras() != null) {
 
             musicTitle = result.getExtras().getString("taskTitle");    //Title of the Music
             musicBody = result.getExtras().getString("taskSubtitle");    //Body of the Music
             musicURL = result.getExtras().getString("takImg");     //url of music
-            musicID  = result.getExtras().getInt("taskID");        //id of music
-            musicImageURL  = result.getExtras().getString("taskLikes");     // image url
-            musicShares =  result.getExtras().getString("taskShares");      //share count
-            musicViews =  result.getExtras().getString("taskViews");       //view count
-            musicDuration =  result.getExtras().getInt("musicDuration");
+            musicID = result.getExtras().getInt("taskID");        //id of music
+            musicImageURL = result.getExtras().getString("taskLikes");     // image url
+            musicShares = result.getExtras().getString("taskShares");      //share count
+            musicViews = result.getExtras().getString("taskViews");       //view count
+            musicDuration = result.getExtras().getInt("musicDuration");
 
             MusicLibrary.addToList();
 
@@ -154,13 +175,13 @@ public class MainActivity extends AppCompatActivity {
         try {
             viewcount = Integer.parseInt(musicViews) + 1;
         } catch (NumberFormatException e) {
-            Toast.makeText(getApplicationContext(), getString(R.string.nwError) , Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(), getString(R.string.nwError), Toast.LENGTH_LONG).show();
         }
         musicViews = String.valueOf(viewcount);
 
-       // Toast.makeText(this, "Views : "+musicViews+" Task ID "+musicID, Toast.LENGTH_SHORT).show();
+        // Toast.makeText(this, "Views : "+musicViews+" Task ID "+musicID, Toast.LENGTH_SHORT).show();
 
-        SendViewsToServer(musicViews,String.valueOf(musicID));
+        SendViewsToServer(musicViews, String.valueOf(musicID));
 
         shareMusicImage.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -169,22 +190,21 @@ public class MainActivity extends AppCompatActivity {
                 v.startAnimation(buttonClick);
 
 
-
                 Intent share = new Intent(Intent.ACTION_SEND);
                 share.setType("text/plain");
                 //share.setPackage("com.whatsapp");
-                share.putExtra(Intent.EXTRA_TEXT, getString(R.string.musicShare)+"\n-------------------------\nhttps://play.google.com/store/apps/details?id=com.apps.amit.lawofattraction");
+                share.putExtra(Intent.EXTRA_TEXT, getString(R.string.musicShare) + "\n-------------------------\nhttps://play.google.com/store/apps/details?id=com.apps.amit.lawofattraction");
                 try {
                     startActivity(Intent.createChooser(share, getString(R.string.chooseToShare)));
 
                     try {
                         sharecount = Integer.parseInt(musicShares);
                     } catch (NumberFormatException e) {
-                        Toast.makeText(getApplicationContext(), getString(R.string.nwError) , Toast.LENGTH_LONG).show();
+                        Toast.makeText(getApplicationContext(), getString(R.string.nwError), Toast.LENGTH_LONG).show();
                     }
                     musicShares = String.valueOf(sharecount);
 
-                    SendSharesToServer(musicShares,String.valueOf(musicID));
+                    SendSharesToServer(musicShares, String.valueOf(musicID));
 
 
                 } catch (android.content.ActivityNotFoundException ex) {
@@ -192,12 +212,11 @@ public class MainActivity extends AppCompatActivity {
                 }
 
 
-
-
-
             }
         });
 
+
+    }
 
     }
 

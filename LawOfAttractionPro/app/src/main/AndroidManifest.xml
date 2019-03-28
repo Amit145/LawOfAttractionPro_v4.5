@@ -115,15 +115,16 @@
             android:label="@string/title_activity_feedback"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
+
         <activity
             android:name="com.apps.amit.lawofattractionpro.Quotes"
             android:screenOrientation="portrait">
             <intent-filter>
-                <action android:name="DAILY_QUOTE" />
-
+                <action android:name="DAILY" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+
         <activity
             android:name="com.apps.amit.lawofattractionpro.Lawtips"
             android:screenOrientation="portrait" />
@@ -174,7 +175,6 @@
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="STORY" />
-
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
@@ -188,14 +188,6 @@
             </intent-filter>
         </service>
 
-        <!--
-             MediaSession, prior to API 21, uses a broadcast receiver to communicate with a
-             media session. It does not have to be this broadcast receiver, but it must
-             handle the action "android.intent.action.MEDIA_BUTTON".
-
-             Additionally, this is used to resume the service from an inactive state upon
-             receiving a media button event (such as "play").
-        -->
         <receiver android:name="android.support.v4.media.session.MediaButtonReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.MEDIA_BUTTON"/>

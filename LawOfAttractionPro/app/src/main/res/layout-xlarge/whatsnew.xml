@@ -46,7 +46,7 @@
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
             android:text="\t New Relaxation Music that will help you to calm and relax your mind"
-            android:textSize="35sp"
+            android:textSize="25sp"
             android:textStyle="normal"
             android:fontFamily="@font/abeezee"/>
 

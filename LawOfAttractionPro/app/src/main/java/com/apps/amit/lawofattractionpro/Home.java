@@ -1,6 +1,8 @@
 package com.apps.amit.lawofattractionpro;
 
 
+import android.app.AlarmManager;
+import android.app.PendingIntent;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
@@ -121,13 +123,16 @@ public class Home extends AppCompatActivity {
 
 	    FirebaseMessaging.getInstance().subscribeToTopic("LAW");
 
+       // FirebaseMessaging.getInstance().subscribeToTopic("TEST");
+
+
+
 
         SharedPreferences nameSp1 = getSharedPreferences("timerEnable", experiences.MODE_PRIVATE);
         String naam = nameSp1.getString("userName","");
 
 	    Toolbar toolbar =  findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
 
 
         FloatingActionButton fab =  findViewById(R.id.fab);
