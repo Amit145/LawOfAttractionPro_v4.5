@@ -70,9 +70,6 @@ public class uexperiences extends RecyclerView.Adapter<uexperiences.ViewHolder> 
             pJobProfile = (TextView) itemView.findViewById(R.id.pJobProfiletxt);
             pTime = (TextView) itemView.findViewById(R.id.pJobProfiletxt1);
 
-
-
-            /*
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
@@ -95,7 +92,7 @@ public class uexperiences extends RecyclerView.Adapter<uexperiences.ViewHolder> 
 
 
 
-            */
+
 
         }
     }

@@ -480,8 +480,6 @@ public class Quotes extends AppCompatActivity {
                     public void onResponse(String response) {
 
 
-
-
                         try {
 
                             JSONArray jsonarray = new JSONArray(response);
@@ -637,6 +635,7 @@ public class Quotes extends AppCompatActivity {
 
 
 
+
             }
         }
         SendPostReqAsyncTask sendPostReqAsyncTask = new SendPostReqAsyncTask();
@@ -699,13 +698,29 @@ public class Quotes extends AppCompatActivity {
                 super.onPostExecute(result);
 
 
+                connMngr = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+                if(connMngr!=null && connMngr.getActiveNetworkInfo() != null){
+
+                    netInfo = connMngr.getActiveNetworkInfo();
+                }
+
+                if(netInfo!=null && netInfo.isConnected())
+                {
+                    Toast.makeText(getApplicationContext(), resources.getString(R.string.activityQuote_quoteThank), Toast.LENGTH_LONG).show();
+
+                } else {
+
+                    Toast.makeText(getApplicationContext(), resources.getString(R.string.noInternet_txt), Toast.LENGTH_LONG).show();
+
+                }
+
 
             }
         }
         SendPostReqAsyncTask sendPostReqAsyncTask = new SendPostReqAsyncTask();
         sendPostReqAsyncTask.execute(Name, Quote,Time);
         alert.dismiss();
-        Toast.makeText(getApplicationContext(),getString(R.string.activityQuote_quoteThank),Toast.LENGTH_LONG).show();
+        //Toast.makeText(getApplicationContext(),getString(R.string.activityQuote_quoteThank),Toast.LENGTH_LONG).show();
         // getSqlDetails();
     }
 

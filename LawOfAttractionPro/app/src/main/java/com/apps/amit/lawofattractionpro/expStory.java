@@ -63,7 +63,7 @@ public class expStory extends AppCompatActivity {
     String id,UToken;
 
     //free version
-    String ServerKey ="AAAAZJbjH64:APA91bFz_84cJQm9GCIRB62VoHD0IIqboeLcKOPVHY-ANhSWIgX4wBPXxCn5kgejKRsd0w_LHXgHMhSmztm62lJA64zs3Pe7oAwNBn-O29iZnBJuvMfMg0Ik0FpMCSmKyQvtyvOC-UCt";
+    String ServerKey ="AAAAF3wcKuU:APA91bHtj0iXrqpFaHjciJncf64p6xntAd7BQ7v6tCYBOwmVNeSaHEr789jfxCLq6qfH6JbeTNkRCk2ALVbMrZTJNozlE3VOt2LMFUnzZtHep4Mgkc0eTCwheT0ZxM8tnh2J4tVs4T4z";
 
     SwipeRefreshLayout mSwipeRefreshLayout;
     private AlphaAnimation buttonClick = new AlphaAnimation(1F, 0.8F);
