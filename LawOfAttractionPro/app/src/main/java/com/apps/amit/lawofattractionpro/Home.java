@@ -341,7 +341,7 @@ public class Home extends AppCompatActivity {
             LayoutInflater inflater = Home.this.getLayoutInflater();
             final View dialogView = inflater.inflate(R.layout.whatsnew, null);
             builder.setCancelable(false);
-            builder.setMessage("What's New In v4.5");
+            builder.setMessage("What's New In v4.6");
 
             builder.setView(dialogView);
             alert = builder.create();
