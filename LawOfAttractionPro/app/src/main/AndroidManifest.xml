@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.apps.amit.lawofattractionpro">
 
     <uses-permission android:name="android.permission.VIBRATE" />
@@ -15,6 +16,7 @@
         android:normalScreens="true" />
 
     <application
+        android:networkSecurityConfig="@xml/network_security_config"
         android:allowBackup="true"
         android:allowTaskReparenting="false"
         android:excludeFromRecents="true"
@@ -194,11 +196,13 @@
             </intent-filter>
         </service>
 
-        <receiver android:name="android.support.v4.media.session.MediaButtonReceiver">
+        <receiver android:name="androidx.media.session.MediaButtonReceiver">
             <intent-filter>
                 <action android:name="android.intent.action.MEDIA_BUTTON" />
             </intent-filter>
         </receiver>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+
     </application>
 
 </manifest>

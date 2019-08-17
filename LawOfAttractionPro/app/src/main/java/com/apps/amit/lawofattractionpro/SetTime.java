@@ -3,7 +3,7 @@ package com.apps.amit.lawofattractionpro;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.res.Resources;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.InputFilter;
 import android.view.View;
@@ -13,8 +13,7 @@ import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
 import com.apps.amit.lawofattractionpro.helper.LocaleHelper;
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
+
 import butterknife.ButterKnife;
 import static java.lang.Integer.parseInt;
 
