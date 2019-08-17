@@ -346,7 +346,7 @@ public class Home extends AppCompatActivity {
             LayoutInflater inflater = Home.this.getLayoutInflater();
             final View dialogView = inflater.inflate(R.layout.whatsnew, null);
             builder.setCancelable(false);
-            builder.setMessage("What's New In v4.6");
+            builder.setMessage("What's New In v4.7");
 
             builder.setView(dialogView);
             alert = builder.create();
@@ -355,14 +355,14 @@ public class Home extends AppCompatActivity {
             Button cancel =  dialogView.findViewById(R.id.btncancel);
             ImageView img =  dialogView.findViewById(R.id.storyImage);
 
-            Glide.with(getApplicationContext()).load(R.drawable.p1).thumbnail(0.1f).into(img);
+            Glide.with(getApplicationContext()).load(R.drawable.p).thumbnail(0.1f).into(img);
 
             submit.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     v.startAnimation(buttonClick);
 
-                    Intent art1 = new Intent(getApplicationContext(),MusicList.class);
+                    Intent art1 = new Intent(getApplicationContext(),ThankYou.class);
                     startActivity(art1);
 
                     alert.dismiss();
@@ -481,11 +481,11 @@ public class Home extends AppCompatActivity {
     private boolean isFirstTime()
     {
         SharedPreferences pref = getPreferences(MODE_PRIVATE);
-        boolean ranBefore = pref.getBoolean("whatsNew",false);
+        boolean ranBefore = pref.getBoolean("whatsNew4.7",false);
         if(!ranBefore)
         {
             SharedPreferences.Editor editor = pref.edit();
-            editor.putBoolean("whatsNew",true);
+            editor.putBoolean("whatsNew4.7",true);
             editor.apply();
         }
         return !ranBefore;

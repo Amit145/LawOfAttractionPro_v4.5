@@ -11,106 +11,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="56eb9d49-b152-41e8-b99f-6bf65b7300f1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/apps/amit/lawofattractionpro/Intro1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/apps/amit/lawofattractionpro/ThankYou.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/highlight.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_settings_black_24dp.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/font/nunito.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/font/nunito_extrabold.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_intro1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_thank_you.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/fileContent/fileContent.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher_foreground.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/values/ic_launcher_background.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.1/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.1/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_core_runtime_1_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_core_runtime_1_1_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_livedata_core_1_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_livedata_core_1_1_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_runtime_1_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_runtime_1_1_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_viewmodel_1_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__android_arch_lifecycle_viewmodel_1_1_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_animated_vector_drawable_27_1_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_animated_vector_drawable_27_1_1_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_appcompat_v7_27_1_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_appcompat_v7_27_1_1_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_cardview_v7_27_1_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_cardview_v7_27_1_1_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_constraint_constraint_layout_1_1_3_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_constraint_constraint_layout_1_1_3_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_customtabs_27_1_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_customtabs_27_1_1_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_design_27_1_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_design_27_1_1_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_multidex_1_0_3_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_multidex_1_0_3_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_multidex_instrumentation_1_0_2_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_multidex_instrumentation_1_0_2_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_recyclerview_v7_27_1_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_recyclerview_v7_27_1_1_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_compat_27_1_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_compat_27_1_1_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_core_ui_27_1_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_core_ui_27_1_1_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_core_utils_27_1_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_core_utils_27_1_1_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_fragment_27_1_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_fragment_27_1_1_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_media_compat_27_1_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_media_compat_27_1_1_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_v4_27_1_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_v4_27_1_1_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_vector_drawable_27_1_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_support_vector_drawable_27_1_1_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_espresso_espresso_core_3_0_2_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_espresso_espresso_core_3_0_2_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_espresso_espresso_idling_resource_3_0_2_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_espresso_espresso_idling_resource_3_0_2_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_monitor_1_0_2_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_monitor_1_0_2_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_runner_1_0_2_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_test_runner_1_0_2_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_transition_27_1_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_support_transition_27_1_1_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_ads_17_1_2_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_ads_17_1_2_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_ads_base_17_1_2_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_ads_base_17_1_2_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_ads_identifier_16_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_ads_identifier_16_0_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_ads_lite_17_1_2_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_ads_lite_17_1_2_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_base_16_0_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_base_16_0_1_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_basement_16_0_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_basement_16_0_1_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_gass_17_1_2_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_gass_17_1_2_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_measurement_api_16_0_4_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_measurement_api_16_0_4_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_measurement_base_16_0_5_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_measurement_base_16_0_5_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_measurement_sdk_api_16_0_4_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_measurement_sdk_api_16_0_4_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_stats_16_0_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_stats_16_0_1_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_tasks_16_0_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_tasks_16_0_1_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_analytics_16_0_6_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_analytics_16_0_6_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_analytics_impl_16_2_4_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_analytics_impl_16_2_4_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_common_16_0_3_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_common_16_0_3_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_core_16_0_6_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_core_16_0_6_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_iid_17_0_4_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_iid_17_0_4_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_iid_interop_16_0_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_iid_interop_16_0_1_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_measurement_connector_17_0_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_measurement_connector_17_0_1_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_measurement_connector_impl_17_0_4_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_measurement_connector_impl_17_0_4_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_messaging_17_3_4_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_firebase_firebase_messaging_17_3_4_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_jakewharton_butterknife_8_4_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_jakewharton_butterknife_8_4_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_leakcanary_leakcanary_analyzer_1_5_4_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_leakcanary_leakcanary_analyzer_1_5_4_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_leakcanary_leakcanary_android_1_5_4_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_leakcanary_leakcanary_android_1_5_4_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_leakcanary_leakcanary_android_no_op_1_5_4_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_leakcanary_leakcanary_android_no_op_1_5_4_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__dyanamitechetan_vusikview_vusikview_1_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__dyanamitechetan_vusikview_vusikview_1_1_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/apps/amit/lawofattractionpro/Contact.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/apps/amit/lawofattractionpro/Contact.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/apps/amit/lawofattractionpro/DatabaseHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/apps/amit/lawofattractionpro/DatabaseHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/apps/amit/lawofattractionpro/Exercise1.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/apps/amit/lawofattractionpro/Exercise1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/apps/amit/lawofattractionpro/Exercise2.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/apps/amit/lawofattractionpro/Exercise2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/apps/amit/lawofattractionpro/Exercise3.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/apps/amit/lawofattractionpro/Exercise3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/apps/amit/lawofattractionpro/Exercise4.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/apps/amit/lawofattractionpro/Exercise4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/apps/amit/lawofattractionpro/Exercise5.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/apps/amit/lawofattractionpro/Exercise5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/apps/amit/lawofattractionpro/Finish.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/apps/amit/lawofattractionpro/Finish.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/ic_launcher-web.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/ic_launcher-web.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/apps/amit/lawofattractionpro/Home.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/apps/amit/lawofattractionpro/Home.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/apps/amit/lawofattractionpro/MyCustomPagerAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/apps/amit/lawofattractionpro/MyCustomPagerAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/apps/amit/lawofattractionpro/Quotes.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/apps/amit/lawofattractionpro/Quotes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/apps/amit/lawofattractionpro/RecyclerAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/apps/amit/lawofattractionpro/RecyclerAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/apps/amit/lawofattractionpro/Settings.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/apps/amit/lawofattractionpro/Settings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/apps/amit/lawofattractionpro/feedback.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/apps/amit/lawofattractionpro/feedback.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/lawimg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout-large/activity_finish.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout-large/activity_finish.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout-large/activity_quotes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout-large/activity_quotes.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout-normal/activity_finish.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout-normal/activity_finish.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout-normal/activity_quotes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout-normal/activity_quotes.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout-xlarge/activity_finish.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout-xlarge/activity_finish.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout-xlarge/activity_quotes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout-xlarge/activity_quotes.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_finish.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_finish.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_quotes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_quotes.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu-xlarge/activity_home_drawer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu-xlarge/activity_home_drawer.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/activity_home_drawer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu/activity_home_drawer.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout-large/activity_exercise5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout-large/activity_exercise5.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout-large/whatsnew.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout-large/whatsnew.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout-normal/activity_exercise5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout-normal/activity_exercise5.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout-normal/whatsnew.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout-normal/whatsnew.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout-xlarge/activity_exercise5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout-xlarge/activity_exercise5.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout-xlarge/whatsnew.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout-xlarge/whatsnew.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_exercise5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_exercise5.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/whatsnew.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/whatsnew.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -127,11 +63,51 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apps/amit/lawofattractionpro/feedback.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apps/amit/lawofattractionpro/Home.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="376">
-              <caret line="248" column="13" selection-start-line="248" selection-start-column="13" selection-end-line="248" selection-end-column="13" />
+            <state relative-caret-position="159">
+              <caret line="357" column="65" selection-start-line="357" selection-start-column="65" selection-end-line="357" selection-end-column="65" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout-xlarge/activity_exercise5.xml">
+          <provider editor-type-id="android-designer2" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout-normal/activity_exercise5.xml">
+          <provider editor-type-id="android-designer2" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout-large/activity_exercise5.xml">
+          <provider editor-type-id="android-designer2" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_exercise5.xml">
+          <provider editor-type-id="android-designer2" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -159,6 +135,8 @@
       <find>THA</find>
       <find>v4</find>
       <find>c656ad</find>
+      <find>Congratul</find>
+      <find>wh</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -177,13 +155,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/java/com/apps/amit/lawofattractionpro/MainActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout-large/content_home.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/content_home.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/apps/amit/lawofattractionpro/MusicList.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/apps/amit/lawofattractionpro/CommentsReminder.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout-normal/content_home.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout-normal/wish_options.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/apps/amit/lawofattractionpro/FirebaseMessagingService.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout-normal/activity_sub_task.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout-large/activity_sub_task.xml" />
@@ -193,7 +164,6 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout-normal/activity_main.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout-xlarge/content_home.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout-xlarge/whatsnew.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout-xlarge/activity_sub_task.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/apps/amit/lawofattractionpro/expStory.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/apps/amit/lawofattractionpro/uexperiences.java" />
@@ -217,7 +187,6 @@
         <option value="$PROJECT_DIR$/app/src/main/res/menu/activity_home_drawer.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/apps/amit/lawofattractionpro/Settings.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/apps/amit/lawofattractionpro/RecyclerAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/apps/amit/lawofattractionpro/Home.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/apps/amit/lawofattractionpro/MyCustomPagerAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/apps/amit/lawofattractionpro/Quotes.java" />
@@ -226,8 +195,17 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout-large/activity_quotes.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_quotes.xml" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/apps/amit/lawofattractionpro/feedback.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout-xlarge/whatsnew.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout-normal/whatsnew.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout-large/whatsnew.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/whatsnew.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/apps/amit/lawofattractionpro/Home.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout-xlarge/activity_exercise5.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout-normal/activity_exercise5.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout-large/activity_exercise5.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_exercise5.xml" />
       </list>
     </option>
   </component>
@@ -236,7 +214,9 @@
     <option name="width" value="1282" />
     <option name="height" value="735" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -260,13 +240,20 @@
             <path>
               <item name="LawOfAttractionPro" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="lawofattractionpro" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
             </path>
             <path>
               <item name="LawOfAttractionPro" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="res" type="d4f16f75:AndroidResFolderNode" />
+              <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
+            </path>
+            <path>
+              <item name="LawOfAttractionPro" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+              <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
+              <item name="activity_exercise5" type="c431d0b8:AndroidResGroupNode" />
             </path>
             <path>
               <item name="LawOfAttractionPro" type="1abcf292:AndroidViewProjectNode" />
@@ -386,11 +373,11 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="1" weight="0.28668684" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.28668684" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Build Variants" order="4" side_tool="true" />
@@ -412,7 +399,7 @@
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Gradle" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="right" id="Preview" order="4" weight="0.2193646" />
+      <window_info anchor="right" id="Preview" order="4" visible="true" weight="0.2193646" />
       <window_info anchor="right" id="Palette&#9;" order="5" />
       <window_info anchor="right" id="Assistant" order="6" weight="0.32980332" />
     </layout>
@@ -457,457 +444,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/highlight.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apps/amit/lawofattractionpro/Intro1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1326">
-          <caret line="80" column="42" lean-forward="true" selection-start-line="80" selection-start-column="42" selection-end-line="80" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apps/amit/lawofattractionpro/Exercise1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="43" column="26" lean-forward="true" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1631#1673#0" expanded="true" />
-            <element signature="e#1714#1742#0" expanded="true" />
-            <element signature="e#2168#2195#0" expanded="true" />
-            <element signature="e#4735#4760#0" expanded="true" />
-            <element signature="e#5925#5951#0" expanded="true" />
-            <element signature="e#7117#7143#0" expanded="true" />
-            <element signature="e#8307#8333#0" expanded="true" />
-            <element signature="e#9497#9523#0" expanded="true" />
-            <element signature="e#10687#10713#0" expanded="true" />
-            <element signature="e#11876#11902#0" expanded="true" />
-            <element signature="e#13066#13092#0" expanded="true" />
-            <element signature="e#16464#16489#0" expanded="true" />
-            <element signature="e#16574#16603#0" expanded="true" />
-            <element signature="e#16639#16680#0" expanded="true" />
-            <element signature="e#16716#16757#0" expanded="true" />
-            <element signature="e#16793#16834#0" expanded="true" />
-            <element signature="e#16870#16911#0" expanded="true" />
-            <element signature="e#16947#16988#0" expanded="true" />
-            <element signature="e#17024#17065#0" expanded="true" />
-            <element signature="e#17104#17134#0" expanded="true" />
-            <element signature="e#17296#17322#0" expanded="true" />
-            <element signature="e#17407#17436#0" expanded="true" />
-            <element signature="e#17472#17512#0" expanded="true" />
-            <element signature="e#17548#17588#0" expanded="true" />
-            <element signature="e#17624#17664#0" expanded="true" />
-            <element signature="e#17700#17740#0" expanded="true" />
-            <element signature="e#17776#17816#0" expanded="true" />
-            <element signature="e#17852#17892#0" expanded="true" />
-            <element signature="e#17931#17961#0" expanded="true" />
-            <element signature="e#18123#18149#0" expanded="true" />
-            <element signature="e#18234#18263#0" expanded="true" />
-            <element signature="e#18299#18339#0" expanded="true" />
-            <element signature="e#18375#18415#0" expanded="true" />
-            <element signature="e#18451#18491#0" expanded="true" />
-            <element signature="e#18527#18567#0" expanded="true" />
-            <element signature="e#18603#18643#0" expanded="true" />
-            <element signature="e#18679#18719#0" expanded="true" />
-            <element signature="e#18758#18788#0" expanded="true" />
-            <element signature="e#18950#18976#0" expanded="true" />
-            <element signature="e#19061#19090#0" expanded="true" />
-            <element signature="e#19126#19165#0" expanded="true" />
-            <element signature="e#19201#19240#0" expanded="true" />
-            <element signature="e#19276#19315#0" expanded="true" />
-            <element signature="e#19351#19390#0" expanded="true" />
-            <element signature="e#19426#19465#0" expanded="true" />
-            <element signature="e#19501#19540#0" expanded="true" />
-            <element signature="e#19579#19609#0" expanded="true" />
-            <element signature="e#19771#19797#0" expanded="true" />
-            <element signature="e#19882#19911#0" expanded="true" />
-            <element signature="e#19947#19988#0" expanded="true" />
-            <element signature="e#20024#20065#0" expanded="true" />
-            <element signature="e#20101#20142#0" expanded="true" />
-            <element signature="e#20178#20219#0" expanded="true" />
-            <element signature="e#20255#20296#0" expanded="true" />
-            <element signature="e#20332#20373#0" expanded="true" />
-            <element signature="e#20412#20442#0" expanded="true" />
-            <element signature="e#20604#20630#0" expanded="true" />
-            <element signature="e#20715#20744#0" expanded="true" />
-            <element signature="e#20780#20822#0" expanded="true" />
-            <element signature="e#20858#20900#0" expanded="true" />
-            <element signature="e#20936#20978#0" expanded="true" />
-            <element signature="e#21014#21056#0" expanded="true" />
-            <element signature="e#21092#21134#0" expanded="true" />
-            <element signature="e#21170#21212#0" expanded="true" />
-            <element signature="e#21251#21281#0" expanded="true" />
-            <element signature="e#21443#21469#0" expanded="true" />
-            <element signature="e#21554#21583#0" expanded="true" />
-            <element signature="e#21619#21658#0" expanded="true" />
-            <element signature="e#21694#21733#0" expanded="true" />
-            <element signature="e#21769#21808#0" expanded="true" />
-            <element signature="e#21844#21883#0" expanded="true" />
-            <element signature="e#21919#21958#0" expanded="true" />
-            <element signature="e#21994#22033#0" expanded="true" />
-            <element signature="e#22072#22102#0" expanded="true" />
-            <element signature="e#22264#22290#0" expanded="true" />
-            <element signature="e#22422#22451#0" expanded="true" />
-            <element signature="e#22487#22522#0" expanded="true" />
-            <element signature="e#22558#22593#0" expanded="true" />
-            <element signature="e#22629#22664#0" expanded="true" />
-            <element signature="e#22700#22735#0" expanded="true" />
-            <element signature="e#22771#22806#0" expanded="true" />
-            <element signature="e#22842#22877#0" expanded="true" />
-            <element signature="e#22916#22946#0" expanded="true" />
-            <element signature="e#23571#23600#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apps/amit/lawofattractionpro/Exercise2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2752">
-          <caret line="84" column="56" selection-start-line="84" selection-start-column="56" selection-end-line="84" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1807#1859#0" expanded="true" />
-            <element signature="e#1896#1934#0" expanded="true" />
-            <element signature="e#2328#2365#0" expanded="true" />
-            <element signature="e#5063#5102#0" expanded="true" />
-            <element signature="e#5612#5652#0" expanded="true" />
-            <element signature="e#6176#6201#0" expanded="true" />
-            <element signature="e#6278#6307#0" expanded="true" />
-            <element signature="e#6339#6390#0" expanded="true" />
-            <element signature="e#6422#6473#0" expanded="true" />
-            <element signature="e#6505#6556#0" expanded="true" />
-            <element signature="e#6588#6639#0" expanded="true" />
-            <element signature="e#6671#6722#0" expanded="true" />
-            <element signature="e#6754#6805#0" expanded="true" />
-            <element signature="e#6840#6870#0" expanded="true" />
-            <element signature="e#7024#7050#0" expanded="true" />
-            <element signature="e#7127#7156#0" expanded="true" />
-            <element signature="e#7188#7238#0" expanded="true" />
-            <element signature="e#7270#7320#0" expanded="true" />
-            <element signature="e#7352#7402#0" expanded="true" />
-            <element signature="e#7434#7484#0" expanded="true" />
-            <element signature="e#7516#7566#0" expanded="true" />
-            <element signature="e#7598#7648#0" expanded="true" />
-            <element signature="e#7683#7713#0" expanded="true" />
-            <element signature="e#7870#7896#0" expanded="true" />
-            <element signature="e#7973#8002#0" expanded="true" />
-            <element signature="e#8034#8084#0" expanded="true" />
-            <element signature="e#8116#8166#0" expanded="true" />
-            <element signature="e#8198#8248#0" expanded="true" />
-            <element signature="e#8280#8330#0" expanded="true" />
-            <element signature="e#8362#8412#0" expanded="true" />
-            <element signature="e#8444#8494#0" expanded="true" />
-            <element signature="e#8529#8559#0" expanded="true" />
-            <element signature="e#8716#8742#0" expanded="true" />
-            <element signature="e#8819#8848#0" expanded="true" />
-            <element signature="e#8880#8929#0" expanded="true" />
-            <element signature="e#8961#9010#0" expanded="true" />
-            <element signature="e#9042#9091#0" expanded="true" />
-            <element signature="e#9123#9172#0" expanded="true" />
-            <element signature="e#9204#9253#0" expanded="true" />
-            <element signature="e#9285#9334#0" expanded="true" />
-            <element signature="e#9369#9399#0" expanded="true" />
-            <element signature="e#9555#9581#0" expanded="true" />
-            <element signature="e#9658#9687#0" expanded="true" />
-            <element signature="e#9719#9770#0" expanded="true" />
-            <element signature="e#9802#9853#0" expanded="true" />
-            <element signature="e#9885#9936#0" expanded="true" />
-            <element signature="e#9968#10019#0" expanded="true" />
-            <element signature="e#10051#10102#0" expanded="true" />
-            <element signature="e#10134#10185#0" expanded="true" />
-            <element signature="e#10220#10250#0" expanded="true" />
-            <element signature="e#10408#10434#0" expanded="true" />
-            <element signature="e#10511#10540#0" expanded="true" />
-            <element signature="e#10572#10624#0" expanded="true" />
-            <element signature="e#10656#10708#0" expanded="true" />
-            <element signature="e#10740#10792#0" expanded="true" />
-            <element signature="e#10824#10876#0" expanded="true" />
-            <element signature="e#10908#10960#0" expanded="true" />
-            <element signature="e#10992#11044#0" expanded="true" />
-            <element signature="e#11079#11109#0" expanded="true" />
-            <element signature="e#11268#11294#0" expanded="true" />
-            <element signature="e#11371#11400#0" expanded="true" />
-            <element signature="e#11432#11481#0" expanded="true" />
-            <element signature="e#11513#11562#0" expanded="true" />
-            <element signature="e#11594#11643#0" expanded="true" />
-            <element signature="e#11675#11724#0" expanded="true" />
-            <element signature="e#11756#11805#0" expanded="true" />
-            <element signature="e#11837#11886#0" expanded="true" />
-            <element signature="e#11921#11951#0" expanded="true" />
-            <element signature="e#12108#12134#0" expanded="true" />
-            <element signature="e#12210#12249#0" expanded="true" />
-            <element signature="e#12281#12326#0" expanded="true" />
-            <element signature="e#12358#12403#0" expanded="true" />
-            <element signature="e#12435#12480#0" expanded="true" />
-            <element signature="e#12512#12557#0" expanded="true" />
-            <element signature="e#12589#12634#0" expanded="true" />
-            <element signature="e#12666#12711#0" expanded="true" />
-            <element signature="e#12746#12786#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apps/amit/lawofattractionpro/Exercise3.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="82" column="13" lean-forward="true" selection-start-line="82" selection-start-column="13" selection-end-line="82" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1844#1896#0" expanded="true" />
-            <element signature="e#1933#1971#0" expanded="true" />
-            <element signature="e#2365#2402#0" expanded="true" />
-            <element signature="e#5066#5105#0" expanded="true" />
-            <element signature="e#5617#5657#0" expanded="true" />
-            <element signature="e#6197#6222#0" expanded="true" />
-            <element signature="e#6299#6328#0" expanded="true" />
-            <element signature="e#6360#6411#0" expanded="true" />
-            <element signature="e#6443#6494#0" expanded="true" />
-            <element signature="e#6526#6577#0" expanded="true" />
-            <element signature="e#6609#6660#0" expanded="true" />
-            <element signature="e#6692#6743#0" expanded="true" />
-            <element signature="e#6775#6826#0" expanded="true" />
-            <element signature="e#6861#6891#0" expanded="true" />
-            <element signature="e#7049#7075#0" expanded="true" />
-            <element signature="e#7152#7181#0" expanded="true" />
-            <element signature="e#7213#7263#0" expanded="true" />
-            <element signature="e#7295#7345#0" expanded="true" />
-            <element signature="e#7377#7427#0" expanded="true" />
-            <element signature="e#7459#7509#0" expanded="true" />
-            <element signature="e#7541#7591#0" expanded="true" />
-            <element signature="e#7623#7673#0" expanded="true" />
-            <element signature="e#7708#7738#0" expanded="true" />
-            <element signature="e#7895#7921#0" expanded="true" />
-            <element signature="e#7998#8027#0" expanded="true" />
-            <element signature="e#8059#8109#0" expanded="true" />
-            <element signature="e#8141#8191#0" expanded="true" />
-            <element signature="e#8223#8273#0" expanded="true" />
-            <element signature="e#8305#8355#0" expanded="true" />
-            <element signature="e#8387#8437#0" expanded="true" />
-            <element signature="e#8469#8519#0" expanded="true" />
-            <element signature="e#8554#8584#0" expanded="true" />
-            <element signature="e#8741#8767#0" expanded="true" />
-            <element signature="e#8844#8873#0" expanded="true" />
-            <element signature="e#8905#8954#0" expanded="true" />
-            <element signature="e#8986#9035#0" expanded="true" />
-            <element signature="e#9067#9116#0" expanded="true" />
-            <element signature="e#9148#9197#0" expanded="true" />
-            <element signature="e#9229#9278#0" expanded="true" />
-            <element signature="e#9310#9359#0" expanded="true" />
-            <element signature="e#9394#9424#0" expanded="true" />
-            <element signature="e#9580#9606#0" expanded="true" />
-            <element signature="e#9683#9712#0" expanded="true" />
-            <element signature="e#9744#9795#0" expanded="true" />
-            <element signature="e#9827#9878#0" expanded="true" />
-            <element signature="e#9910#9961#0" expanded="true" />
-            <element signature="e#9993#10044#0" expanded="true" />
-            <element signature="e#10076#10127#0" expanded="true" />
-            <element signature="e#10159#10210#0" expanded="true" />
-            <element signature="e#10245#10275#0" expanded="true" />
-            <element signature="e#10433#10459#0" expanded="true" />
-            <element signature="e#10536#10565#0" expanded="true" />
-            <element signature="e#10597#10649#0" expanded="true" />
-            <element signature="e#10681#10733#0" expanded="true" />
-            <element signature="e#10765#10817#0" expanded="true" />
-            <element signature="e#10849#10901#0" expanded="true" />
-            <element signature="e#10933#10985#0" expanded="true" />
-            <element signature="e#11017#11069#0" expanded="true" />
-            <element signature="e#11104#11134#0" expanded="true" />
-            <element signature="e#11293#11319#0" expanded="true" />
-            <element signature="e#11396#11425#0" expanded="true" />
-            <element signature="e#11457#11506#0" expanded="true" />
-            <element signature="e#11538#11587#0" expanded="true" />
-            <element signature="e#11619#11668#0" expanded="true" />
-            <element signature="e#11700#11749#0" expanded="true" />
-            <element signature="e#11781#11830#0" expanded="true" />
-            <element signature="e#11862#11911#0" expanded="true" />
-            <element signature="e#11946#11976#0" expanded="true" />
-            <element signature="e#12132#12158#0" expanded="true" />
-            <element signature="e#12234#12273#0" expanded="true" />
-            <element signature="e#12305#12350#0" expanded="true" />
-            <element signature="e#12382#12427#0" expanded="true" />
-            <element signature="e#12459#12504#0" expanded="true" />
-            <element signature="e#12536#12581#0" expanded="true" />
-            <element signature="e#12613#12658#0" expanded="true" />
-            <element signature="e#12690#12735#0" expanded="true" />
-            <element signature="e#12770#12810#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apps/amit/lawofattractionpro/Exercise4.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="85" selection-start-line="85" selection-end-line="85" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1819#1871#0" expanded="true" />
-            <element signature="e#1908#1946#0" expanded="true" />
-            <element signature="e#2340#2377#0" expanded="true" />
-            <element signature="e#4864#4903#0" expanded="true" />
-            <element signature="e#5412#5452#0" expanded="true" />
-            <element signature="e#5994#6019#0" expanded="true" />
-            <element signature="e#6096#6125#0" expanded="true" />
-            <element signature="e#6157#6208#0" expanded="true" />
-            <element signature="e#6240#6291#0" expanded="true" />
-            <element signature="e#6323#6374#0" expanded="true" />
-            <element signature="e#6406#6457#0" expanded="true" />
-            <element signature="e#6489#6540#0" expanded="true" />
-            <element signature="e#6575#6605#0" expanded="true" />
-            <element signature="e#6759#6785#0" expanded="true" />
-            <element signature="e#6862#6891#0" expanded="true" />
-            <element signature="e#6923#6973#0" expanded="true" />
-            <element signature="e#7005#7055#0" expanded="true" />
-            <element signature="e#7087#7137#0" expanded="true" />
-            <element signature="e#7169#7219#0" expanded="true" />
-            <element signature="e#7251#7301#0" expanded="true" />
-            <element signature="e#7336#7366#0" expanded="true" />
-            <element signature="e#7520#7546#0" expanded="true" />
-            <element signature="e#7623#7652#0" expanded="true" />
-            <element signature="e#7684#7734#0" expanded="true" />
-            <element signature="e#7766#7816#0" expanded="true" />
-            <element signature="e#7848#7898#0" expanded="true" />
-            <element signature="e#7930#7980#0" expanded="true" />
-            <element signature="e#8012#8062#0" expanded="true" />
-            <element signature="e#8097#8127#0" expanded="true" />
-            <element signature="e#8281#8307#0" expanded="true" />
-            <element signature="e#8384#8413#0" expanded="true" />
-            <element signature="e#8445#8494#0" expanded="true" />
-            <element signature="e#8526#8575#0" expanded="true" />
-            <element signature="e#8607#8656#0" expanded="true" />
-            <element signature="e#8688#8737#0" expanded="true" />
-            <element signature="e#8769#8818#0" expanded="true" />
-            <element signature="e#8853#8883#0" expanded="true" />
-            <element signature="e#9037#9063#0" expanded="true" />
-            <element signature="e#9140#9169#0" expanded="true" />
-            <element signature="e#9201#9252#0" expanded="true" />
-            <element signature="e#9284#9335#0" expanded="true" />
-            <element signature="e#9367#9418#0" expanded="true" />
-            <element signature="e#9450#9501#0" expanded="true" />
-            <element signature="e#9533#9584#0" expanded="true" />
-            <element signature="e#9619#9649#0" expanded="true" />
-            <element signature="e#9803#9829#0" expanded="true" />
-            <element signature="e#9906#9935#0" expanded="true" />
-            <element signature="e#9967#10019#0" expanded="true" />
-            <element signature="e#10051#10103#0" expanded="true" />
-            <element signature="e#10135#10187#0" expanded="true" />
-            <element signature="e#10219#10271#0" expanded="true" />
-            <element signature="e#10303#10355#0" expanded="true" />
-            <element signature="e#10390#10420#0" expanded="true" />
-            <element signature="e#10574#10600#0" expanded="true" />
-            <element signature="e#10677#10706#0" expanded="true" />
-            <element signature="e#10738#10787#0" expanded="true" />
-            <element signature="e#10819#10868#0" expanded="true" />
-            <element signature="e#10900#10949#0" expanded="true" />
-            <element signature="e#10981#11030#0" expanded="true" />
-            <element signature="e#11062#11111#0" expanded="true" />
-            <element signature="e#11146#11176#0" expanded="true" />
-            <element signature="e#11330#11356#0" expanded="true" />
-            <element signature="e#11432#11471#0" expanded="true" />
-            <element signature="e#11503#11548#0" expanded="true" />
-            <element signature="e#11580#11625#0" expanded="true" />
-            <element signature="e#11657#11702#0" expanded="true" />
-            <element signature="e#11734#11779#0" expanded="true" />
-            <element signature="e#11811#11856#0" expanded="true" />
-            <element signature="e#11891#11931#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apps/amit/lawofattractionpro/Exercise5.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="84" selection-start-line="84" selection-end-line="84" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1841#1893#0" expanded="true" />
-            <element signature="e#1930#1968#0" expanded="true" />
-            <element signature="e#2362#2399#0" expanded="true" />
-            <element signature="e#4938#4977#0" expanded="true" />
-            <element signature="e#5492#5532#0" expanded="true" />
-            <element signature="e#6076#6101#0" expanded="true" />
-            <element signature="e#6178#6207#0" expanded="true" />
-            <element signature="e#6239#6290#0" expanded="true" />
-            <element signature="e#6322#6373#0" expanded="true" />
-            <element signature="e#6405#6456#0" expanded="true" />
-            <element signature="e#6488#6539#0" expanded="true" />
-            <element signature="e#6571#6622#0" expanded="true" />
-            <element signature="e#6654#6705#0" expanded="true" />
-            <element signature="e#6740#6770#0" expanded="true" />
-            <element signature="e#6924#6950#0" expanded="true" />
-            <element signature="e#7027#7056#0" expanded="true" />
-            <element signature="e#7088#7138#0" expanded="true" />
-            <element signature="e#7170#7220#0" expanded="true" />
-            <element signature="e#7252#7302#0" expanded="true" />
-            <element signature="e#7334#7384#0" expanded="true" />
-            <element signature="e#7416#7466#0" expanded="true" />
-            <element signature="e#7498#7548#0" expanded="true" />
-            <element signature="e#7583#7613#0" expanded="true" />
-            <element signature="e#7767#7793#0" expanded="true" />
-            <element signature="e#7870#7899#0" expanded="true" />
-            <element signature="e#7931#7981#0" expanded="true" />
-            <element signature="e#8013#8063#0" expanded="true" />
-            <element signature="e#8095#8145#0" expanded="true" />
-            <element signature="e#8177#8227#0" expanded="true" />
-            <element signature="e#8259#8309#0" expanded="true" />
-            <element signature="e#8341#8391#0" expanded="true" />
-            <element signature="e#8426#8456#0" expanded="true" />
-            <element signature="e#8610#8636#0" expanded="true" />
-            <element signature="e#8713#8742#0" expanded="true" />
-            <element signature="e#8774#8824#0" expanded="true" />
-            <element signature="e#8856#8906#0" expanded="true" />
-            <element signature="e#8938#8988#0" expanded="true" />
-            <element signature="e#9020#9070#0" expanded="true" />
-            <element signature="e#9102#9152#0" expanded="true" />
-            <element signature="e#9184#9234#0" expanded="true" />
-            <element signature="e#9269#9299#0" expanded="true" />
-            <element signature="e#9453#9479#0" expanded="true" />
-            <element signature="e#9556#9585#0" expanded="true" />
-            <element signature="e#9617#9668#0" expanded="true" />
-            <element signature="e#9700#9751#0" expanded="true" />
-            <element signature="e#9783#9834#0" expanded="true" />
-            <element signature="e#9866#9917#0" expanded="true" />
-            <element signature="e#9949#10000#0" expanded="true" />
-            <element signature="e#10032#10083#0" expanded="true" />
-            <element signature="e#10118#10148#0" expanded="true" />
-            <element signature="e#10302#10328#0" expanded="true" />
-            <element signature="e#10405#10434#0" expanded="true" />
-            <element signature="e#10466#10518#0" expanded="true" />
-            <element signature="e#10550#10602#0" expanded="true" />
-            <element signature="e#10634#10686#0" expanded="true" />
-            <element signature="e#10718#10770#0" expanded="true" />
-            <element signature="e#10802#10854#0" expanded="true" />
-            <element signature="e#10886#10938#0" expanded="true" />
-            <element signature="e#10973#11003#0" expanded="true" />
-            <element signature="e#11157#11183#0" expanded="true" />
-            <element signature="e#11260#11289#0" expanded="true" />
-            <element signature="e#11321#11370#0" expanded="true" />
-            <element signature="e#11402#11451#0" expanded="true" />
-            <element signature="e#11483#11532#0" expanded="true" />
-            <element signature="e#11564#11613#0" expanded="true" />
-            <element signature="e#11645#11694#0" expanded="true" />
-            <element signature="e#11726#11775#0" expanded="true" />
-            <element signature="e#11810#11840#0" expanded="true" />
-            <element signature="e#11995#12021#0" expanded="true" />
-            <element signature="e#12097#12136#0" expanded="true" />
-            <element signature="e#12168#12213#0" expanded="true" />
-            <element signature="e#12245#12290#0" expanded="true" />
-            <element signature="e#12322#12367#0" expanded="true" />
-            <element signature="e#12399#12444#0" expanded="true" />
-            <element signature="e#12476#12521#0" expanded="true" />
-            <element signature="e#12553#12598#0" expanded="true" />
-            <element signature="e#12633#12673#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout-xlarge/activity_exercise5.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apps/amit/lawofattractionpro/Contact.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
@@ -1066,16 +602,6 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/p.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apps/amit/lawofattractionpro/Home.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-404">
-          <caret line="113" column="33" selection-start-line="113" selection-start-column="33" selection-end-line="113" selection-end-column="33" />
-          <folding>
-            <element signature="e#5316#5354#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apps/amit/lawofattractionpro/CommentsRecyclerAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-763">
@@ -1181,13 +707,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="284" column="20" selection-start-line="284" selection-start-column="20" selection-end-line="284" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout-xlarge/activity_quotes.xml">
       <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
@@ -1208,6 +727,84 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="376">
           <caret line="248" column="13" selection-start-line="248" selection-start-column="13" selection-end-line="248" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="198" selection-start-line="198" selection-end-line="198" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout-xlarge/whatsnew.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="501">
+          <caret line="90" selection-start-line="90" selection-end-line="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout-normal/whatsnew.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="75" column="23" selection-end-line="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout-large/whatsnew.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="501">
+          <caret line="88" selection-start-line="88" selection-end-line="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/whatsnew.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="501">
+          <caret line="88" selection-start-line="88" selection-end-line="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/apps/amit/lawofattractionpro/Home.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="357" column="65" selection-start-line="357" selection-start-column="65" selection-end-line="357" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout-xlarge/activity_exercise5.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout-normal/activity_exercise5.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout-large/activity_exercise5.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_exercise5.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="31" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
         </state>
       </provider>
     </entry>

@@ -15,7 +15,7 @@
 
         android:layout_weight="2"
         android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_height="200dp"
         android:orientation="vertical">
 
         <ImageView
@@ -45,8 +45,8 @@
             android:layout_marginRight="10dp"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
-            android:text="\t New Relaxation Music that will help you to calm and relax your mind"
-            android:textSize="25sp"
+            android:text="\t Join the Thank You Movement by showing the 'Act of Gratitude !'"
+            android:textSize="30sp"
             android:textStyle="normal"
             android:fontFamily="@font/abeezee"/>
 
@@ -67,20 +67,19 @@
             android:layout_weight=".5"
             android:text="DISMISS"
             android:textStyle="bold"
+            android:textSize="25sp"
             android:background="#ff3333"
             android:textColor="#ffffff"
-            android:textSize="25sp"
-
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
         <Button
             android:id="@+id/btnsubmit"
             android:layout_weight=".5"
-            android:text="LISTEN NOW"
+            android:text="OPEN"
+            android:textSize="25sp"
             android:background=" #ff5733"
             android:textColor="#ffffff"
             android:textStyle="bold"
-            android:textSize="25sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
     </LinearLayout>
