@@ -19,8 +19,6 @@ import android.widget.Toast;
 
 import com.apps.amit.lawofattractionpro.helper.LocaleHelper;
 import com.bumptech.glide.Glide;
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
 
 import butterknife.ButterKnife;
 
@@ -115,12 +113,11 @@ public class Exercise5 extends AppCompatActivity {
             //final String value1 = pref.getString("language","en");
             final String value1 = "en";
 
-             context = LocaleHelper.setLocale(getApplicationContext(), value1);
-             resources = context.getResources();
+            context = LocaleHelper.setLocale(getApplicationContext(), value1);
+            resources = context.getResources();
 
             updateViews(value1);
 
-            Glide.with(getApplicationContext()).load(R.drawable.ex5).thumbnail(0.1f).into(img);
 
             txt.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -135,98 +132,23 @@ public class Exercise5 extends AppCompatActivity {
                 }
             });
 
-            if (timervalue.contains("ON")) {
-                buttonStart.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
+
+            buttonStart.setText(resources.getString(R.string.next_text));
+            buttonStart.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
 
 
-                        txt.setVisibility(View.VISIBLE);
-                        v.startAnimation(buttonClick);
-
-                        new CountDownTimer((value + 1) * 1000, 1000) {
-                            @Override
-                            public void onTick(long millisUntilFinished) {
-
-                                 context = LocaleHelper.setLocale(getApplicationContext(), value1);
-                                 resources = context.getResources();
-                                buttonStart.setEnabled(false);
-                                String textTime = "" + millisUntilFinished / 1000;
-                                buttonStart.setText(textTime);
-                                txt.setText(resources.getString(R.string.skip_text));
-
-                                txt.setOnClickListener(new View.OnClickListener() {
-                                    @Override
-                                    public void onClick(View v) {
+                    v.startAnimation(buttonClick);
+                    Intent art1 = new Intent(Exercise5.this, Finish.class);
+                    startActivity(art1);
+                    img = null;
+                    finish();
 
 
-                                        v.startAnimation(buttonClick);
-                                        Intent art1 = new Intent(getApplicationContext(), Finish.class);
-                                        startActivity(art1);
-                                        cancel();
-                                        img = null;
-                                        finish();
+                }
+            });
 
-
-                                    }
-                                });
-
-                            }
-
-                            @Override
-                            public void onFinish() {
-
-
-                                 context = LocaleHelper.setLocale(getApplicationContext(), value1);
-                                 resources = context.getResources();
-
-                                if(vib != null) {
-                                    vib.vibrate(500);
-                                }
-
-                                buttonStart.setText(resources.getString(R.string.done_text));
-                                txt.setText("");
-                                buttonStart.setEnabled(true);
-
-                                buttonStart.setOnClickListener(new View.OnClickListener() {
-                                    @Override
-                                    public void onClick(View v) {
-
-                                        v.startAnimation(buttonClick);
-                                        Intent art1 = new Intent(getApplicationContext(), Finish.class);
-                                        startActivity(art1);
-                                        img = null;
-                                        finish();
-
-
-                                    }
-                                });
-
-
-                            }
-                        }.start();
-
-                    }
-                });
-
-            } else {
-
-                buttonStart.setText(resources.getString(R.string.next_text));
-                buttonStart.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-
-
-                        v.startAnimation(buttonClick);
-                        Intent art1 = new Intent(Exercise5.this, Finish.class);
-                        startActivity(art1);
-                        img = null;
-                        finish();
-
-
-                    }
-                });
-            }
 
 
         }catch(OutOfMemoryError e)
@@ -238,20 +160,120 @@ public class Exercise5 extends AppCompatActivity {
 
     private void updateViews(String languageCode) {
 
-         context = LocaleHelper.setLocale(this, languageCode);
-         resources = context.getResources();
+        context = LocaleHelper.setLocale(this, languageCode);
+        resources = context.getResources();
 
 
 
         //Story
-        txt.setText(resources.getString(R.string.skip_text));
-        actText1.setText(resources.getString(R.string.activity5_text1));
-        actText2.setText(resources.getString(R.string.activity5_text2));
-        actText3.setText(resources.getString(R.string.activity5_text3));
-        actText4.setText(resources.getString(R.string.activity5_text4));
-        actText5.setText(resources.getString(R.string.activity5_text5));
-        actText6.setText(resources.getString(R.string.activity5_text6));
-        buttonStart.setText(resources.getString(R.string.start_text));
+
+        SharedPreferences sharedPreferencesManifestationType = getSharedPreferences("MANIFESTATION_TYPE", Exercise1.MODE_PRIVATE);
+        String manifestationTypeValue = sharedPreferencesManifestationType.getString("MANIFESTATION_TYPE_VALUE", "");
+
+        //Story
+        if (manifestationTypeValue.equalsIgnoreCase(getString(R.string.value))) {
+
+            txt.setVisibility(View.INVISIBLE);
+            txt.setText(getString(R.string.skip_text));
+            actText1.setText(resources.getString(R.string.activity5_text1_Money));
+            actText2.setText(resources.getString(R.string.activity5_text2_Money));
+            actText3.setText(resources.getString(R.string.activity5_text3_Money));
+            actText4.setText(resources.getString(R.string.activity5_text4_Money));
+            actText5.setText(resources.getString(R.string.activity5_text5_Money));
+            actText6.setText(resources.getString(R.string.activity5_text6_Money));
+            buttonStart.setText(getString(R.string.start_text));
+            Glide.with(getApplicationContext()).load(R.drawable.ex5).thumbnail(0.1f).into(img);
+
+        } if (manifestationTypeValue.equalsIgnoreCase(getString(R.string.value1))) {
+
+            txt.setVisibility(View.INVISIBLE);
+            txt.setText(getString(R.string.skip_text));
+            actText1.setText(resources.getString(R.string.activity5_text1_Home));
+            actText2.setText(resources.getString(R.string.activity5_text2_Home));
+            actText3.setText(resources.getString(R.string.activity5_text3_Home));
+            actText4.setText(resources.getString(R.string.activity5_text4_Home));
+            actText5.setText(resources.getString(R.string.activity5_text5_Home));
+            actText6.setText(resources.getString(R.string.activity5_text6_Home));
+            buttonStart.setText(getString(R.string.start_text));
+            Glide.with(getApplicationContext()).load(R.drawable.ex5).thumbnail(0.1f).into(img);
+
+        } if (manifestationTypeValue.equalsIgnoreCase(getString(R.string.value2))) {
+
+            txt.setVisibility(View.INVISIBLE);
+            txt.setText(getString(R.string.skip_text));
+            actText1.setText(resources.getString(R.string.activity5_text1_Love));
+            actText2.setText(resources.getString(R.string.activity5_text2_Love));
+            actText3.setText(resources.getString(R.string.activity5_text3_Love));
+            actText4.setText(resources.getString(R.string.activity5_text4_Love));
+            actText5.setText(resources.getString(R.string.activity5_text5_Love));
+            actText6.setText(resources.getString(R.string.activity5_text6_Love));
+            buttonStart.setText(getString(R.string.start_text));
+            Glide.with(getApplicationContext()).load(R.drawable.ex5).thumbnail(0.1f).into(img);
+
+        } if (manifestationTypeValue.equalsIgnoreCase(getString(R.string.value3))) {
+
+            txt.setVisibility(View.INVISIBLE);
+            txt.setText(getString(R.string.skip_text));
+            actText1.setText(resources.getString(R.string.activity5_text1_Love));
+            actText2.setText(resources.getString(R.string.activity5_text2_Love));
+            actText3.setText(resources.getString(R.string.activity5_text3_Love));
+            actText4.setText(resources.getString(R.string.activity5_text4_Love));
+            actText5.setText(resources.getString(R.string.activity5_text5_Love));
+            actText6.setText(resources.getString(R.string.activity5_text6_Love));
+            buttonStart.setText(getString(R.string.start_text));
+            Glide.with(getApplicationContext()).load(R.drawable.ex5).thumbnail(0.1f).into(img);
+
+        } if (manifestationTypeValue.equalsIgnoreCase(getString(R.string.value4))) {
+
+            txt.setVisibility(View.INVISIBLE);
+            txt.setText(getString(R.string.skip_text));
+            actText1.setText(resources.getString(R.string.activity5_text1_Happy));
+            actText2.setText(resources.getString(R.string.activity5_text2_Happy));
+            actText3.setText(resources.getString(R.string.activity5_text3_Happy));
+            actText4.setText(resources.getString(R.string.activity5_text4_Happy));
+            actText5.setText(resources.getString(R.string.activity5_text5_Happy));
+            actText6.setText(resources.getString(R.string.activity5_text6_Happy));
+            buttonStart.setText(getString(R.string.start_text));
+            Glide.with(getApplicationContext()).load(R.drawable.ex5).thumbnail(0.1f).into(img);
+
+        } if (manifestationTypeValue.equalsIgnoreCase(getString(R.string.value5))) {
+
+            txt.setVisibility(View.INVISIBLE);
+            txt.setText(getString(R.string.skip_text));
+            actText1.setText(resources.getString(R.string.activity5_text1_Health));
+            actText2.setText(resources.getString(R.string.activity5_text2_Health));
+            actText3.setText(resources.getString(R.string.activity5_text3_Health));
+            actText4.setText(resources.getString(R.string.activity5_text4_Health));
+            actText5.setText(resources.getString(R.string.activity5_text5_Health));
+            actText6.setText(resources.getString(R.string.activity5_text6_Health));
+            buttonStart.setText(getString(R.string.start_text));
+            Glide.with(getApplicationContext()).load(R.drawable.ex5).thumbnail(0.1f).into(img);
+
+        } if (manifestationTypeValue.equalsIgnoreCase(getString(R.string.value6))) {
+
+            txt.setVisibility(View.INVISIBLE);
+            txt.setText(getString(R.string.skip_text));
+            actText1.setText(resources.getString(R.string.activity5_text1_Job));
+            actText2.setText(resources.getString(R.string.activity5_text2_Job));
+            actText3.setText(resources.getString(R.string.activity5_text3_Job));
+            actText4.setText(resources.getString(R.string.activity5_text4_Job));
+            actText5.setText(resources.getString(R.string.activity5_text5_Job));
+            actText6.setText(resources.getString(R.string.activity5_text6_Job));
+            buttonStart.setText(getString(R.string.start_text));
+            Glide.with(getApplicationContext()).load(R.drawable.ex5).thumbnail(0.1f).into(img);
+
+        }  if (manifestationTypeValue.equalsIgnoreCase(getString(R.string.value7)) || manifestationTypeValue.equalsIgnoreCase("")) {
+            txt.setText(resources.getString(R.string.skip_text));
+            actText1.setText(resources.getString(R.string.activity5_text1));
+            actText2.setText(resources.getString(R.string.activity5_text2));
+            actText3.setText(resources.getString(R.string.activity5_text3));
+            actText4.setText(resources.getString(R.string.activity5_text4));
+            actText5.setText(resources.getString(R.string.activity5_text5));
+            actText6.setText(resources.getString(R.string.activity5_text6));
+            buttonStart.setText(resources.getString(R.string.start_text));
+            Glide.with(getApplicationContext()).load(R.drawable.ex5).thumbnail(0.1f).into(img);
+
+        }
 
 
 

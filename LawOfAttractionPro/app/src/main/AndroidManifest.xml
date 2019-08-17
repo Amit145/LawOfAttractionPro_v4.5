@@ -5,7 +5,7 @@
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
@@ -27,16 +27,22 @@
         android:taskAffinity=""
         android:theme="@style/AppTheme">
         <activity
-            android:name="com.apps.amit.lawofattractionpro.MusicList"
-            android:screenOrientation="portrait"/>
+            android:name=".ThankYou"
+            android:screenOrientation="portrait" />
         <activity
-            android:name="com.apps.amit.lawofattractionpro.PrivateWishes"
-            android:screenOrientation="portrait"/>
+            android:name=".Intro1"
+            android:screenOrientation="portrait" />
         <activity
-            android:name="com.apps.amit.lawofattractionpro.MainActivity"
-            android:screenOrientation="portrait"/>
+            android:name=".MusicList"
+            android:screenOrientation="portrait" />
         <activity
-            android:name="com.apps.amit.lawofattractionpro.Home"
+            android:name=".PrivateWishes"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Home"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -45,88 +51,87 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.apps.amit.lawofattractionpro.Exercise1"
+            android:name=".Exercise1"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.apps.amit.lawofattractionpro.Exercise2"
+            android:name=".Exercise2"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.apps.amit.lawofattractionpro.Exercise3"
+            android:name=".Exercise3"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.apps.amit.lawofattractionpro.Exercise4"
+            android:name=".Exercise4"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.apps.amit.lawofattractionpro.Exercise5"
+            android:name=".Exercise5"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.apps.amit.lawofattractionpro.Finish"
+            android:name=".Finish"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.apps.amit.lawofattractionpro.Settings"
+            android:name=".Settings"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.apps.amit.lawofattractionpro.calendar"
+            android:name=".calendar"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.apps.amit.lawofattractionpro.timepicker"
+            android:name=".timepicker"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.apps.amit.lawofattractionpro.Story"
+            android:name=".Story"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.apps.amit.lawofattractionpro.AboutApp"
+            android:name=".AboutApp"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.apps.amit.lawofattractionpro.AllQuotes"
+            android:name=".AllQuotes"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.apps.amit.lawofattractionpro.experiences"
+            android:name=".experiences"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.apps.amit.lawofattractionpro.expStory"
+            android:name=".expStory"
             android:screenOrientation="portrait" />
 
-        <receiver android:name="com.apps.amit.lawofattractionpro.AlarmReceiver" />
-        <receiver android:name="com.apps.amit.lawofattractionpro.Notify" />
-        <receiver android:name="com.apps.amit.lawofattractionpro.CommentsReminder" />
+        <receiver android:name=".AlarmReceiver" />
+        <receiver android:name=".Notify" />
+        <receiver android:name=".CommentsReminder" />
 
         <activity
-            android:name="com.apps.amit.lawofattractionpro.SetTime"
+            android:name=".SetTime"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustNothing" />
         <activity
-            android:name="com.apps.amit.lawofattractionpro.info"
+            android:name=".info"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.apps.amit.lawofattractionpro.SetLanguage"
+            android:name=".SetLanguage"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.apps.amit.lawofattractionpro.exer"
+            android:name=".exer"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.apps.amit.lawofattractionpro.Manual"
+            android:name=".Manual"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.apps.amit.lawofattractionpro.comments"
+            android:name=".comments"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.apps.amit.lawofattractionpro.feedback"
+            android:name=".feedback"
             android:label="@string/title_activity_feedback"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
-
         <activity
-            android:name="com.apps.amit.lawofattractionpro.Quotes"
+            android:name=".Quotes"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="DAILY" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
         <activity
-            android:name="com.apps.amit.lawofattractionpro.Lawtips"
+            android:name=".Lawtips"
             android:screenOrientation="portrait" />
 
         <meta-data
@@ -136,12 +141,12 @@
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="ca-app-pub-2259921691483610~8730116859" />
 
-        <service android:name="com.apps.amit.lawofattractionpro.FirebaseMessagingService">
+        <service android:name=".FirebaseMessagingService">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
-        <service android:name="com.apps.amit.lawofattractionpro.FirebaseInstanceIDService">
+        <service android:name=".FirebaseInstanceIDService">
             <intent-filter>
                 <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
             </intent-filter>
@@ -162,35 +167,36 @@
             android:resource="@color/colorPrimary" />
 
         <activity
-            android:name="com.apps.amit.lawofattractionpro.Policy"
+            android:name=".Policy"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.apps.amit.lawofattractionpro.Task"
+            android:name=".Task"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.apps.amit.lawofattractionpro.SubTask"
+            android:name=".SubTask"
             android:screenOrientation="portrait" />
         <activity
-            android:name="com.apps.amit.lawofattractionpro.storyList"
+            android:name=".storyList"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="STORY" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
 
         <service
-            android:name="com.apps.amit.lawofattractionpro.service.MusicService"
+            android:name=".service.MusicService"
             android:enabled="true"
             android:exported="true">
             <intent-filter>
-                <action android:name="android.media.browse.MediaBrowserService"/>
+                <action android:name="android.media.browse.MediaBrowserService" />
             </intent-filter>
         </service>
 
         <receiver android:name="android.support.v4.media.session.MediaButtonReceiver">
             <intent-filter>
-                <action android:name="android.intent.action.MEDIA_BUTTON"/>
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
             </intent-filter>
         </receiver>
     </application>

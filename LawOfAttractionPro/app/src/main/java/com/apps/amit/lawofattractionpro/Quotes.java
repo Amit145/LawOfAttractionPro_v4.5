@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Resources;
+import android.graphics.Color;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.AsyncTask;
@@ -45,6 +46,7 @@ import java.text.DateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.Random;
 
 import butterknife.ButterKnife;
 
@@ -57,7 +59,7 @@ public class Quotes extends AppCompatActivity {
      AlertDialog alert;
     Resources resources;
     SwipeRefreshLayout mSwipeRefreshLayout;
-    LinearLayout l1,l2,l3;
+    LinearLayout l1,l2,l3,activity;
     private AlphaAnimation buttonClick = new AlphaAnimation(1F, 0.8F);
 
     String UserName,UserComment,timee;
@@ -67,6 +69,8 @@ public class Quotes extends AppCompatActivity {
     ConnectivityManager connMngr;
     NetworkInfo netInfo;
     String value  = "en";
+    List<String> colorList = new ArrayList<String>();
+
     //SwipeRefreshLayout mSwipeRefreshLayout1;
 
 
@@ -100,9 +104,13 @@ public class Quotes extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quotes);
 
+        colorList.add("#FF04B15D");
+        colorList.add("#c656ad");
+
         l1 = findViewById(R.id.quotbox) ;
         l2 = findViewById(R.id.quotcnt) ;
         l3 = findViewById(R.id.quotcnt1) ;
+        activity = findViewById(R.id.quoteLayout);
 
         title=  findViewById(R.id.qtext);
         //subtitle= findViewById(R.id.def);
@@ -168,6 +176,7 @@ public class Quotes extends AppCompatActivity {
         if(netInfo!=null && netInfo.isConnected())
         {
 
+
             quote =  findViewById(R.id.quotetxt);
             like =  findViewById(R.id.quotelike);
             share =  findViewById(R.id.quoteshare);
@@ -186,6 +195,12 @@ public class Quotes extends AppCompatActivity {
 
             b1.setVisibility(View.VISIBLE);
             def.setVisibility(View.VISIBLE);
+
+            Random rn = new Random();
+            int answer = rn.nextInt(colorList.size());
+
+            activity.setBackgroundColor(Color.parseColor(colorList.get(answer)));
+
             requestQueue = Volley.newRequestQueue(this);
 
             allq.setOnClickListener(new View.OnClickListener() {

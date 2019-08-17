@@ -20,9 +20,13 @@ import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.InterstitialAd;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.List;
 import java.util.Locale;
+import java.util.Random;
+
 import static com.apps.amit.lawofattractionpro.Exercise1.startTime;
 
 public class Finish extends AppCompatActivity {
@@ -45,6 +49,7 @@ public class Finish extends AppCompatActivity {
     long elapsedMilliSeconds;
     DatabaseHandler db;
 
+    List <String> quoteList = new ArrayList<>();
 
     @Override
     protected void onDestroy() {
@@ -98,17 +103,29 @@ public class Finish extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         try {
+
+            SharedPreferences sharedPreferencesManifestationType = getApplicationContext().getSharedPreferences("MANIFESTATION_TYPE", Exercise1.MODE_PRIVATE);
+            String manifestationTypeValue = sharedPreferencesManifestationType.getString("MANIFESTATION_TYPE_VALUE", "");
+
             super.onCreate(savedInstanceState);
             setContentView(R.layout.activity_finish);
 
+            Random rn = new Random();
 
+            quoteList.add("\"You're one step closer to your dreams..\"");
+            quoteList.add("\"Trust the process ! You will manifest all your dreams..\"");
+            quoteList.add("\"Great thing's take time ! Stay Focused..\"");
+            quoteList.add("\"It is not over, unless you mean it..\"");
+            quoteList.add("\"Trust the Universe ! It is always there for you ..\"");
+
+            int answer = rn.nextInt(quoteList.size());
             db = new DatabaseHandler(getApplicationContext());
 
             home =  findViewById(R.id.home1);
             track =  findViewById(R.id.track);
             share =  findViewById(R.id.share);
             img =  findViewById(R.id.imageView2);
-            txt =  findViewById(R.id.sec);
+
             actText1=  findViewById(R.id.textView1);
             actText2=  findViewById(R.id.textView2);
             actText3=  findViewById(R.id.textView3);
@@ -119,7 +136,7 @@ public class Finish extends AppCompatActivity {
 
             actText1.setText(getString(R.string.activity6_text1));
             actText2.setText(getString(R.string.activity6_text2));
-            actText3.setText(getString(R.string.activity6_text3));
+            actText3.setText(quoteList.get(answer));
             actText4.setText(getString(R.string.activity6_text4));
             actText5.setText(getString(R.string.activity6_text5));
             actText6.setText(getString(R.string.activity6_text6));
@@ -128,8 +145,8 @@ public class Finish extends AppCompatActivity {
             elapsedMilliSeconds = endTime - startTime;
             elapsedSeconds = elapsedMilliSeconds / 1000.0;
             int t = (int) (long) elapsedSeconds;
-            String text = t +" "+ getString(R.string.activity6_text7);
-            txt.setText(text);
+            //String text = t +" "+ getString(R.string.activity6_text7);
+            //txt.setText(manifestationTypeValue);
 
             Date c = Calendar.getInstance().getTime();
 
@@ -137,7 +154,7 @@ public class Finish extends AppCompatActivity {
                     Locale.getDefault());
             String date = df.format(c);
 
-            db.addContact(new Contact(date, t));
+            db.addContact(new Contact(date, manifestationTypeValue));
 
             Toast.makeText(getApplicationContext(), getString(R.string.event_add), Toast.LENGTH_LONG).show();
 
@@ -189,7 +206,7 @@ public class Finish extends AppCompatActivity {
 
                     Intent shareIntent = new Intent(Intent.ACTION_SEND);
                     shareIntent.setType("text/plain");
-                    shareIntent.putExtra(Intent.EXTRA_TEXT, "https://play.google.com/store/apps/details?id=com.apps.amit.lawofattraction");
+                    shareIntent.putExtra(Intent.EXTRA_TEXT, "https://play.google.com/store/apps/details?id=com.apps.amit.lawofattractionpro");
                     try {
                         startActivity(Intent.createChooser(shareIntent, getString(R.string.chooseToShare)));
 

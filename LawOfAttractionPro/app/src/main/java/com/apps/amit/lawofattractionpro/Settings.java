@@ -72,7 +72,7 @@ public class Settings extends AppCompatActivity {
             } else {
 
                 Glide.with(getApplicationContext()).load(R.drawable.sett1).thumbnail(0.1f).into(img1);
-                Glide.with(getApplicationContext()).load(R.drawable.sett2).thumbnail(0.1f).into(img2);
+                Glide.with(getApplicationContext()).load(R.drawable.settt2).thumbnail(0.1f).into(img2);
                 Glide.with(getApplicationContext()).load(R.drawable.set33).thumbnail(0.1f).into(img3);
             }
 
@@ -93,7 +93,7 @@ public class Settings extends AppCompatActivity {
     public void setTime(View view) {
 
         view.startAnimation(buttonClick);
-        art1 = new Intent(getApplicationContext(), SetTime.class);
+        art1 = new Intent(getApplicationContext(), Intro1.class);
         startActivity(art1);
     }
 

@@ -227,16 +227,26 @@ public class feedback extends AppCompatActivity {
         }
 
         else {
+
             view.startAnimation(buttonClick);
 
-            SharedPreferences timerEnable = getSharedPreferences("timerEnable", experiences.MODE_PRIVATE);
-            SharedPreferences.Editor editor = timerEnable.edit();
-            editor.putString("userName", et1.getText().toString());
-            editor.apply();
+            if ((!F2.equalsIgnoreCase("Best") || F3.equalsIgnoreCase("No") || F4.equalsIgnoreCase("No")) && TextUtils.isEmpty(et2.getText().toString())) {
 
-            SendDataToServer(et1.getText().toString(),F1,F2,F3,F4,"PRO : "+et2.getText().toString());
-            //Toast.makeText(this, resources.getString(R.string.thankYou), Toast.LENGTH_LONG).show();
-            this.finish();
+                feed4.setError(" Please let us know how we can improve");
+                Toast.makeText(getApplicationContext(), "Please let us know how we can improve ?", Toast.LENGTH_LONG).show();
+
+
+            } else {
+
+                SharedPreferences timerEnable = getSharedPreferences("timerEnable", experiences.MODE_PRIVATE);
+                SharedPreferences.Editor editor = timerEnable.edit();
+                editor.putString("userName", et1.getText().toString());
+                editor.apply();
+
+                SendDataToServer(et1.getText().toString(), F1, F2, F3, F4, "PRO : " + et2.getText().toString());
+                //Toast.makeText(this, resources.getString(R.string.thankYou), Toast.LENGTH_LONG).show();
+                this.finish();
+            }
         }
     }
 

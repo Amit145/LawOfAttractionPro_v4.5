@@ -111,12 +111,12 @@ public class Home extends AppCompatActivity {
         TextView nameText;
         ButterKnife.bind(this);
 
-        images[0] = R.drawable.p7;
-        images[1] = R.drawable.p6;
-        images[2] = R.drawable.p4;
-        images[3] = R.drawable.p1;
-        images[4] = R.drawable.p2;
-        images[5] = R.drawable.p5;
+        images[0] = R.drawable.p;
+        images[1] = R.drawable.p7;
+        images[2] = R.drawable.p6;
+        images[3] = R.drawable.p4;
+        images[4] = R.drawable.p1;
+        images[5] = R.drawable.p2;
 
         setTitle(getString(R.string.Home_title));
         setContentView(R.layout.activity_home);
@@ -169,7 +169,7 @@ public class Home extends AppCompatActivity {
         button1.setText(getString(R.string.Home_startButtonText));
         homeMyStories.setText(getString(R.string.Home_myStories));
         homeSayToUniverse.setText(getString(R.string.Home_sayToUniverse));
-        homeSettings.setText(getString(R.string.Home_settings));
+        homeSettings.setText(getString(R.string.Home_sayThankYou));
 
 
         drawer =  findViewById(R.id.drawer_layout);
@@ -226,6 +226,11 @@ public class Home extends AppCompatActivity {
                         }else if (id == R.id.nav_task) {
 
                             Intent art1 = new Intent(getApplicationContext(),Task.class);
+                            startActivity(art1);
+
+                        }else if (id == R.id.nav_thanks) {
+
+                            Intent art1 = new Intent(getApplicationContext(),Settings.class);
                             startActivity(art1);
 
                         }
@@ -330,7 +335,7 @@ public class Home extends AppCompatActivity {
 
         Glide.with(getApplicationContext()).load(R.drawable.comments).thumbnail(0.1f).fitCenter().into(img2);
 
-        Glide.with(getApplicationContext()).load(R.drawable.settings).thumbnail(0.1f).fitCenter().into(img3);
+        Glide.with(getApplicationContext()).load(R.drawable.ethankyou).thumbnail(0.1f).fitCenter().into(img3);
 
 
         if(isFirstTime())
@@ -415,7 +420,7 @@ public class Home extends AppCompatActivity {
             public void onClick(View v) {
 
                 v.startAnimation(buttonClick);
-                Intent art1 = new Intent(getApplicationContext(), Settings.class);
+                Intent art1 = new Intent(getApplicationContext(), ThankYou.class);
                 startActivity(art1);
 
             }
