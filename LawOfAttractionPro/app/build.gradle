@@ -7,7 +7,7 @@ android {
         applicationId "com.apps.amit.lawofattractionpro"
         minSdkVersion 16
         targetSdkVersion 28
-        versionCode 12
+        versionCode 13
         versionName "4.7"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         multiDexEnabled true
