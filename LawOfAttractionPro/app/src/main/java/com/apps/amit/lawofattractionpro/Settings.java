@@ -21,6 +21,7 @@ public class Settings extends AppCompatActivity {
     private ImageView img1;
     private ImageView img2;
     private ImageView img3;
+    private ImageView img4;
     private AlphaAnimation buttonClick = new AlphaAnimation(1F, 0.8F);
     private Intent art1;
 
@@ -60,6 +61,7 @@ public class Settings extends AppCompatActivity {
             img1 = findViewById(R.id.img1);
             img2 = findViewById(R.id.img2);
             img3 = findViewById(R.id.img3);
+            img4 = findViewById(R.id.img4);
 
             if(value.equalsIgnoreCase("hi")) {
 
@@ -70,8 +72,9 @@ public class Settings extends AppCompatActivity {
             } else {
 
                 Glide.with(getApplicationContext()).load(R.drawable.sett1).thumbnail(0.1f).into(img1);
-                Glide.with(getApplicationContext()).load(R.drawable.settt2).thumbnail(0.1f).into(img2);
-                Glide.with(getApplicationContext()).load(R.drawable.set33).thumbnail(0.1f).into(img3);
+                Glide.with(getApplicationContext()).load(R.drawable.sett2).thumbnail(0.1f).into(img2);
+                Glide.with(getApplicationContext()).load(R.drawable.settt2).thumbnail(0.1f).into(img3);
+                Glide.with(getApplicationContext()).load(R.drawable.set33).thumbnail(0.1f).into(img4);
             }
 
         }  catch (OutOfMemoryError e) {
@@ -91,11 +94,18 @@ public class Settings extends AppCompatActivity {
     public void setTime(View view) {
 
         view.startAnimation(buttonClick);
-        art1 = new Intent(getApplicationContext(), Intro1.class);
+        art1 = new Intent(getApplicationContext(), SetTime.class);
         startActivity(art1);
     }
 
     public void shareApp(View view) {
+
+        view.startAnimation(buttonClick);
+        art1 = new Intent(getApplicationContext(),Intro1.class);
+        startActivity(art1);
+    }
+
+    public void userInfo(View view) {
 
         view.startAnimation(buttonClick);
         art1 = new Intent(getApplicationContext(),info.class);

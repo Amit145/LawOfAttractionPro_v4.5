@@ -7,6 +7,7 @@ import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.graphics.drawable.Drawable;
+import android.os.CountDownTimer;
 import android.os.SystemClock;
 import android.os.Vibrator;
 import androidx.appcompat.app.AlertDialog;
@@ -531,37 +532,88 @@ public class Exercise1 extends AppCompatActivity {
 
             }
 
+            startTime = SystemClock.elapsedRealtime();
 
 
-            // Toast.makeText(getApplicationContext(), " Value : " + manifestationTypeValue, Toast.LENGTH_LONG).show();
+
+            if(timervalue.contains("ON")) {
+                buttonStart.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+
+                        v.startAnimation(buttonClick);
+                        txt.setVisibility(View.VISIBLE);
+                        new CountDownTimer(+((value + 1) * 1000), 1000) {
+                            @Override
+                            public void onTick(long millisUntilFinished) {
+
+                                buttonStart.setEnabled(false);
+                                String textTime = "" + millisUntilFinished / 1000;
+                                buttonStart.setText(textTime);
+                                txt.setText(getString(R.string.skip_text));
+
+                                txt.setOnClickListener(new View.OnClickListener() {
+                                    @Override
+                                    public void onClick(View v) {
+
+                                        v.startAnimation(buttonClick);
+                                        Intent art1 = new Intent(getApplicationContext(), Exercise2.class);
+                                        startActivity(art1);
+                                        img=null;
+                                        cancel();
+
+                                    }
+                                });
+                            }
+
+                            @Override
+                            public void onFinish() {
 
 
-            txt.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-
-                    v.startAnimation(buttonClick);
-                    Intent art1 = new Intent(getApplicationContext(), Home.class);
-                    startActivity(art1);
+                                if(vib != null) {
+                                    vib.vibrate(500);
+                                }
 
 
-                }
-            });
+                                buttonStart.setText(getString(R.string.done_text));
+                                buttonStart.setEnabled(true);
+                                txt.setText("");
 
-            buttonStart.setText(getString(R.string.next_text));
+                                buttonStart.setOnClickListener(new View.OnClickListener() {
+                                    @Override
+                                    public void onClick(View v) {
 
-            buttonStart.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-
-                    v.startAnimation(buttonClick);
-                    Intent art1 = new Intent(Exercise1.this, Exercise2.class);
-                    startActivity(art1);
-                    img = null;
+                                        v.startAnimation(buttonClick);
+                                        Intent art1 = new Intent(getApplicationContext(), Exercise2.class);
+                                        startActivity(art1);
+                                        img=null;
 
 
-                }
-            });
+                                    }
+                                });
+                            }
+
+                        }.start();
+                    }
+                });
+
+            } else {
+
+                buttonStart.setText(getString(R.string.next_text));
+
+                buttonStart.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+
+                        v.startAnimation(buttonClick);
+                        Intent art1 = new Intent(Exercise1.this, Exercise2.class);
+                        startActivity(art1);
+                        img=null;
+
+
+                    }
+                });
+            }
 
         }
 
