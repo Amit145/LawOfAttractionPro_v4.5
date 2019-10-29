@@ -50,6 +50,11 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
 
         SharedPreferences pref = context.getSharedPreferences("UserLang",MODE_PRIVATE);
 
+
+        SharedPreferences sharedPreferencesManifestationType = context.getSharedPreferences("MANIFESTATION_TYPE", Exercise1.MODE_PRIVATE);
+        String manifestationTypeValue = sharedPreferencesManifestationType.getString("MANIFESTATION_TYPE_VALUE", "");
+
+
         //Store selected language in a Variable called value
         final String value = pref.getString("language","en");
 
@@ -57,9 +62,31 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
         final Resources resources = context.getResources();
 
         Contact obj = listItems.get(position);
+
+        final String temp = String.valueOf(obj.getPhoneNumber());
+
         date = resources.getString(R.string.activityTracker_text4);
-        holder.txt1.setText(resources.getString(R.string.activityTracker_text5)+" " +obj.getName());
-        holder.txt2.setText(resources.getString(R.string.activity6_text3)+" "+String.valueOf(obj.getPhoneNumber()));
+
+        if(temp.length()>20) {
+
+            holder.txt1.setText(resources.getString(R.string.affirmationTracker_text5)+" "+obj.getName());
+            holder.txt2.setText(resources.getString(R.string.affirmation_text)+" "+String.valueOf(obj.getPhoneNumber()));
+
+            holder.linearLayout.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                    Toast.makeText(context,date,Toast.LENGTH_LONG).show();
+                }
+            });
+
+
+        } else {
+
+            holder.txt1.setText(resources.getString(R.string.activityTracker_text5)+" "+obj.getName());
+            holder.txt2.setText(resources.getString(R.string.activity6_text3)+" "+String.valueOf(obj.getPhoneNumber()));
+
+        }
 
         holder.linearLayout.setOnClickListener(new View.OnClickListener() {
             @Override

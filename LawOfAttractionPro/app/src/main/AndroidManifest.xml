@@ -40,6 +40,12 @@
             android:name=".MusicList"
             android:screenOrientation="portrait" />
         <activity
+            android:name=".affirmationactivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Affirmations"
+            android:screenOrientation="portrait" />
+        <activity
             android:name=".PrivateWishes"
             android:screenOrientation="portrait" />
         <activity
@@ -98,6 +104,7 @@
             android:screenOrientation="portrait" />
 
         <receiver android:name=".AlarmReceiver" />
+        <receiver android:name=".AffirmationReceiver" />
         <receiver android:name=".Notify" />
         <receiver android:name=".CommentsReminder" />
 
