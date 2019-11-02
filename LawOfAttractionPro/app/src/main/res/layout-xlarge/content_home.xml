@@ -7,12 +7,13 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.apps.amit.lawofattractionpro.Home"
-    android:background="@drawable/backgroundabstract"
+    android:id="@+id/mainLayout"
     android:weightSum="12"
     android:orientation="vertical"
     tools:showIn="@layout/app_bar_home">
 
     <LinearLayout
+
         android:layout_marginTop="10dp"
         android:orientation="horizontal"
         android:layout_width="match_parent"

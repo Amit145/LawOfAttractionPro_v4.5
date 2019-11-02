@@ -3,8 +3,14 @@ package com.apps.amit.lawofattractionpro;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import androidx.annotation.NonNull;
+
+import com.bumptech.glide.request.animation.GlideAnimation;
+import com.bumptech.glide.request.target.SimpleTarget;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.snackbar.Snackbar;
@@ -15,6 +21,8 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Build;
 import android.os.Bundle;
 import androidx.appcompat.widget.Toolbar;
 import android.view.LayoutInflater;
@@ -25,6 +33,7 @@ import android.view.animation.AlphaAnimation;
 import android.widget.Button;
 import android.content.Context;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 import com.apps.amit.lawofattractionpro.helper.LocaleHelper;
@@ -53,6 +62,7 @@ public class Home extends AppCompatActivity {
     AlertDialog alert;
     Button button1;
     DrawerLayout drawer;
+    LinearLayout mainlayout;
     NavigationView navigationView;
     Timer timer;
     int [] images = new int[6];
@@ -113,6 +123,19 @@ public class Home extends AppCompatActivity {
 
         setTitle(getString(R.string.Home_title));
         setContentView(R.layout.activity_home);
+
+        mainlayout = findViewById(R.id.mainLayout);
+
+
+        Glide.with(this).load(R.drawable.backgroundabstract).asBitmap().into(new SimpleTarget<Bitmap>() {
+            @Override
+            public void onResourceReady(Bitmap bitmap, GlideAnimation<? super Bitmap> glideAnimation) {
+                Drawable drawable = new BitmapDrawable(getResources(), bitmap);
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
+                    mainlayout.setBackground(drawable);
+                }
+            }
+        });
 
 	    FirebaseMessaging.getInstance().subscribeToTopic("LAW");
 

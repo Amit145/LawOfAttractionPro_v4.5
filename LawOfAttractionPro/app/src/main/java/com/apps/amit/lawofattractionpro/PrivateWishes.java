@@ -5,6 +5,11 @@ import android.content.SharedPreferences;
 import android.content.res.Resources;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
+import android.os.Build;
 import android.os.Bundle;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -13,8 +18,13 @@ import android.view.View;
 import android.view.animation.AlphaAnimation;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import com.apps.amit.lawofattractionpro.helper.LocaleHelper;
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.animation.GlideAnimation;
+import com.bumptech.glide.request.target.SimpleTarget;
+
 import java.text.DateFormat;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -33,6 +43,7 @@ public class PrivateWishes extends AppCompatActivity {
     Resources resources;
     TextView nameText;
     TextView wishText;
+    LinearLayout mainlayout;
     RecyclerView.Adapter adapter;
 
     @Override
@@ -44,6 +55,19 @@ public class PrivateWishes extends AppCompatActivity {
 
         //Store selected language in a Variable called value
         //final String value = pref.getString("language","en");
+
+        mainlayout = findViewById(R.id.mainLayout);
+
+
+        Glide.with(this).load(R.drawable.starshd).asBitmap().into(new SimpleTarget<Bitmap>() {
+            @Override
+            public void onResourceReady(Bitmap bitmap, GlideAnimation<? super Bitmap> glideAnimation) {
+                Drawable drawable = new BitmapDrawable(getResources(), bitmap);
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
+                    mainlayout.setBackground(drawable);
+                }
+            }
+        });
 
         Context context = LocaleHelper.setLocale(getApplicationContext(), "en");
         resources = context.getResources();

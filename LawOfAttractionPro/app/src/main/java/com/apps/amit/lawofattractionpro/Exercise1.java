@@ -4,9 +4,12 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.graphics.PorterDuff;
+import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
+import android.os.Build;
 import android.os.CountDownTimer;
 import android.os.SystemClock;
 import android.os.Vibrator;
@@ -17,10 +20,13 @@ import android.view.View;
 import android.view.animation.AlphaAnimation;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.animation.GlideAnimation;
+import com.bumptech.glide.request.target.SimpleTarget;
 
 import butterknife.ButterKnife;
 
@@ -32,6 +38,7 @@ public class Exercise1 extends AppCompatActivity {
     TextView actText1;
     TextView actText2;
     TextView actText3;
+    LinearLayout mainlayout;
     TextView actText4;
     TextView actText5;
     TextView actText6;
@@ -93,6 +100,19 @@ public class Exercise1 extends AppCompatActivity {
         if (!bool)  {
 
             setContentView(R.layout.activity_intro1);
+
+            mainlayout = findViewById(R.id.mainLayout);
+
+
+            Glide.with(this).load(R.drawable.starshd).asBitmap().into(new SimpleTarget<Bitmap>() {
+                @Override
+                public void onResourceReady(Bitmap bitmap, GlideAnimation<? super Bitmap> glideAnimation) {
+                    Drawable drawable = new BitmapDrawable(getResources(), bitmap);
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
+                        mainlayout.setBackground(drawable);
+                    }
+                }
+            });
 
             button = findViewById(R.id.imgButton1);
             button1 = findViewById(R.id.imgButton2);

@@ -4,7 +4,11 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Resources;
+import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
 import android.os.AsyncTask;
+import android.os.Build;
 import android.os.Handler;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 import androidx.appcompat.app.AlertDialog;
@@ -17,6 +21,7 @@ import android.view.View;
 import android.view.animation.AlphaAnimation;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 import com.android.volley.RequestQueue;
@@ -25,6 +30,9 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonArrayRequest;
 import com.android.volley.toolbox.Volley;
 import com.apps.amit.lawofattractionpro.helper.LocaleHelper;
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.animation.GlideAnimation;
+import com.bumptech.glide.request.target.SimpleTarget;
 //import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
@@ -54,7 +62,7 @@ public class expStory extends AppCompatActivity {
     EditText edt, edt1;
     public AlertDialog alert;
     String id,UToken;
-
+    LinearLayout mainlayout;
     //free version
     String ServerKey ="AAAAF3wcKuU:APA91bHtj0iXrqpFaHjciJncf64p6xntAd7BQ7v6tCYBOwmVNeSaHEr789jfxCLq6qfH6JbeTNkRCk2ALVbMrZTJNozlE3VOt2LMFUnzZtHep4Mgkc0eTCwheT0ZxM8tnh2J4tVs4T4z";
 
@@ -73,6 +81,19 @@ public class expStory extends AppCompatActivity {
         setContentView(R.layout.activity_exp_story);
 
         Intent result = getIntent();
+
+        mainlayout = findViewById(R.id.mainLayout);
+
+
+        Glide.with(this).load(R.drawable.starshd).asBitmap().into(new SimpleTarget<Bitmap>() {
+            @Override
+            public void onResourceReady(Bitmap bitmap, GlideAnimation<? super Bitmap> glideAnimation) {
+                Drawable drawable = new BitmapDrawable(getResources(), bitmap);
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
+                    mainlayout.setBackground(drawable);
+                }
+            }
+        });
 
         SharedPreferences pref = getSharedPreferences("UserLang",MODE_PRIVATE);
 

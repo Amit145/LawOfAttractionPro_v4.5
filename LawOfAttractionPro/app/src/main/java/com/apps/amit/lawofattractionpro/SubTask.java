@@ -4,12 +4,17 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Resources;
+import android.graphics.Bitmap;
 import android.graphics.Color;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.AsyncTask;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Build;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -18,6 +23,7 @@ import android.view.animation.AlphaAnimation;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -29,6 +35,8 @@ import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.apps.amit.lawofattractionpro.helper.LocaleHelper;
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.animation.GlideAnimation;
+import com.bumptech.glide.request.target.SimpleTarget;
 import com.google.firebase.iid.FirebaseInstanceId;
 import org.apache.http.HttpResponse;
 import org.apache.http.NameValuePair;
@@ -77,7 +85,7 @@ public class SubTask extends AppCompatActivity {
     RequestQueue requestQueue;
     Resources resources;
     static final String UTF_ENCODING = "UTF-8";
-
+    LinearLayout mainlayout;
     ConnectivityManager connMngr;
     NetworkInfo netInfo;
 
@@ -113,6 +121,19 @@ public class SubTask extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sub_task);
 
+
+        mainlayout = findViewById(R.id.mainLayout);
+
+
+        Glide.with(this).load(R.drawable.starshd).asBitmap().into(new SimpleTarget<Bitmap>() {
+            @Override
+            public void onResourceReady(Bitmap bitmap, GlideAnimation<? super Bitmap> glideAnimation) {
+                Drawable drawable = new BitmapDrawable(getResources(), bitmap);
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
+                    mainlayout.setBackground(drawable);
+                }
+            }
+        });
 
 
         SharedPreferences pref = getSharedPreferences("UserLang",MODE_PRIVATE);
@@ -424,7 +445,7 @@ public class SubTask extends AppCompatActivity {
                     public void onErrorResponse(VolleyError error) {
                         if(error != null){
 
-                            Toast.makeText(getApplicationContext(), resources.getString(R.string.nameError4), Toast.LENGTH_LONG).show();
+                           // Toast.makeText(getApplicationContext(), resources.getString(R.string.nameError4), Toast.LENGTH_LONG).show();
                         }
                     }
                 }
@@ -460,7 +481,7 @@ public class SubTask extends AppCompatActivity {
 
                 } catch (ClientProtocolException e) {
 
-                    Toast.makeText(getApplicationContext(), resources.getString(R.string.myStory_warn), Toast.LENGTH_LONG).show();
+                   // Toast.makeText(getApplicationContext(), resources.getString(R.string.myStory_warn), Toast.LENGTH_LONG).show();
 
                 } catch (IOException e) {
 
@@ -507,7 +528,7 @@ public class SubTask extends AppCompatActivity {
 
                 } catch (ClientProtocolException e) {
 
-                    Toast.makeText(getApplicationContext(), resources.getString(R.string.myStory_warn), Toast.LENGTH_LONG).show();
+                   // Toast.makeText(getApplicationContext(), resources.getString(R.string.myStory_warn), Toast.LENGTH_LONG).show();
 
                 } catch (IOException e) {
 
@@ -548,7 +569,7 @@ public class SubTask extends AppCompatActivity {
 
                 } catch (ClientProtocolException e) {
 
-                    Toast.makeText(getApplicationContext(), resources.getString(R.string.myStory_warn), Toast.LENGTH_LONG).show();
+                   // Toast.makeText(getApplicationContext(), resources.getString(R.string.myStory_warn), Toast.LENGTH_LONG).show();
 
                 } catch (IOException e) {
 
@@ -589,7 +610,7 @@ public class SubTask extends AppCompatActivity {
 
                 } catch (ClientProtocolException e) {
 
-                    Toast.makeText(getApplicationContext(), resources.getString(R.string.myStory_warn), Toast.LENGTH_LONG).show();
+                   // Toast.makeText(getApplicationContext(), resources.getString(R.string.myStory_warn), Toast.LENGTH_LONG).show();
 
 
                 } catch (IOException e) {
@@ -633,7 +654,7 @@ public class SubTask extends AppCompatActivity {
 
                 } catch (ClientProtocolException e) {
 
-                    Toast.makeText(getApplicationContext(), resources.getString(R.string.myStory_warn), Toast.LENGTH_LONG).show();
+                   // Toast.makeText(getApplicationContext(), resources.getString(R.string.myStory_warn), Toast.LENGTH_LONG).show();
 
                 } catch (IOException e) {
 
@@ -739,7 +760,7 @@ public class SubTask extends AppCompatActivity {
 
                 } catch (ClientProtocolException e) {
 
-                    Toast.makeText(getApplicationContext(), resources.getString(R.string.myStory_warn), Toast.LENGTH_LONG).show();
+                   // Toast.makeText(getApplicationContext(), resources.getString(R.string.myStory_warn), Toast.LENGTH_LONG).show();
 
 
                 } catch (IOException e) {
